@@ -7,7 +7,7 @@ import json
 import os
 import re
 from pathlib import Path
-from typing import Any, Dict, List, Optional, Set, Tuple
+from typing import Any, Dict, Iterable, Iterator, List, Optional, Set, TextIO, Tuple
 from xml.parsers import expat
 
 import cssutils
@@ -36,6 +36,54 @@ FORMAT_MAP: Dict[str, Tuple[str, str, str]] = {
     "strong": ("**", "**", "bold"),
     "u": ("__", "__", "underline"),
 }
+
+
+class _JsonArrayWriter:
+    """Streaming JSON array writer to avoid buffering large result sets."""
+
+    def __init__(self, path: str, indent: int = 4) -> None:
+        self._path = Path(path)
+        self._file: Optional[TextIO] = None
+        self._count = 0
+        self._indent = indent
+
+    def __enter__(self) -> "_JsonArrayWriter":
+        self._path.parent.mkdir(parents=True, exist_ok=True)
+        self._file = self._path.open("w", encoding="utf-8")
+        self._file.write("[")
+        return self
+
+    def write(self, item: Dict[str, Any]) -> None:
+        if self._file is None:
+            raise RuntimeError("JSON writer not initialized")
+        if self._count:
+            self._file.write(",\n")
+        else:
+            self._file.write("\n")
+        dumped = json.dumps(item, ensure_ascii=False, indent=self._indent)
+        if self._indent > 0:
+            pad = " " * self._indent
+            dumped = "\n".join(f"{pad}{line}" for line in dumped.splitlines())
+        self._file.write(dumped)
+        self._count += 1
+
+    def write_many(self, items: Iterable[Dict[str, Any]]) -> None:
+        for item in items:
+            self.write(item)
+
+    def __exit__(
+        self,
+        exc_type: Optional[type[BaseException]],
+        exc: Optional[BaseException],
+        tb: Optional[Any],
+    ) -> None:
+        if self._file is None:
+            return
+        if self._count:
+            self._file.write("\n")
+        self._file.write("]\n")
+        self._file.close()
+        self._file = None
 
 
 def parse_stylesheets(base_dir: str, soup: BeautifulSoup) -> Dict[str, Dict[str, str]]:
@@ -135,9 +183,8 @@ def detect_format_and_justify(
 
 def process_xhtml_file(
     filepath: str, class_styles: Dict[str, Dict[str, str]]
-) -> List[Dict[str, Any]]:
-    """Extract formatted/justified lines from an XHTML file."""
-    results: List[Dict[str, Any]] = []
+) -> Iterator[Dict[str, Any]]:
+    """Yield formatted/justified lines from an XHTML file without buffering all rows."""
     with open(filepath, "r", encoding="utf-8") as f:
         for line in f:
             if any(
@@ -157,27 +204,24 @@ def process_xhtml_file(
                     soup, class_styles
                 )
                 if fmt:
-                    results.append({
+                    yield {
                         "line": text,
                         "new_line": new_line,
                         "format": fmt,
                         "justify": justify,
-                    })
-    return results
+                    }
 
 
-def apply_extra_patterns(entries: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+def apply_extra_patterns(
+    entries: Iterable[Dict[str, Any]]
+) -> Iterator[Dict[str, Any]]:
     """Apply regex substitutions to extra cases like Amazon links and level brackets."""
-    new_entries: List[Dict[str, Any]] = []
     for entry in entries:
         text: str = entry["line"]
-        new_line: str = entry["new_line"]
         for rule in EXTRA_PATTERNS:
             if re.match(rule["pattern"], text):
-                new_line = re.sub(rule["pattern"], rule["sub"], text)
-                entry["new_line"] = new_line
-        new_entries.append(entry)
-    return new_entries
+                entry["new_line"] = re.sub(rule["pattern"], rule["sub"], text)
+        yield entry
 
 
 def main(
@@ -197,32 +241,23 @@ def main(
     Returns:
         None
     """
-    all_results: List[Dict[str, Any]] = []
+    with _JsonArrayWriter(output_file) as writer:
+        for root, dirs, _ in os.walk(root_epub_dir):
+            for d in dirs:
+                epub_dir = os.path.join(root, d)
+                xhtml_files = [
+                    os.path.join(epub_dir, f)
+                    for f in os.listdir(epub_dir)
+                    if f.endswith(".xhtml")
+                ]
+                if len(xhtml_files) > 1:
+                    with open(xhtml_files[0], "r", encoding="utf-8") as f:
+                        soup = BeautifulSoup(f, "lxml")
+                    class_styles = parse_stylesheets(epub_dir, soup)
 
-    for root, dirs, _ in os.walk(root_epub_dir):
-        for d in dirs:
-            epub_dir = os.path.join(root, d)
-            # gather XHTML files
-            xhtml_files = [
-                os.path.join(epub_dir, f)
-                for f in os.listdir(epub_dir)
-                if f.endswith(".xhtml")
-            ]
-            if len(xhtml_files) > 1:
-                # build class_styles by parsing first file's soup (stylesheet
-                #   links should be in all)
-                with open(xhtml_files[0], "r", encoding="utf-8") as f:
-                    soup = BeautifulSoup(f, "lxml")
-                class_styles = parse_stylesheets(epub_dir, soup)
-
-                for file in xhtml_files:
-                    results = process_xhtml_file(file, class_styles)
-                    all_results.extend(results)
-
-    all_results = apply_extra_patterns(all_results)
-
-    with open(output_file, "w", encoding="utf-8") as out:
-        json.dump(all_results, out, indent=4, ensure_ascii=False)
+                    for file in xhtml_files:
+                        entries = process_xhtml_file(file, class_styles)
+                        writer.write_many(apply_extra_patterns(entries))
 
 
 if __name__ == "__main__":

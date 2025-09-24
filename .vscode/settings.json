@@ -1,5 +1,6 @@
 {
     "cSpell.words": [
         "Zogarth"
-    ]
+    ],
+    "python.analysis.autoImportCompletions": true
 }
