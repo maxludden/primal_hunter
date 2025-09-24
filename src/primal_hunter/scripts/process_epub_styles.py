@@ -11,7 +11,7 @@ performs the following steps:
   class/id driven formatting into inline ``style=`` declarations.
 * Emit cleaned HTML copies to ``static/html/books/{book}/{chapter:04}.html``.
 * Convert the chapter HTML to Markdown using Pandoc and write to
-  ``static/markdowm/books/{book}/{chapter:04}.md`` (``markdowm`` matches the
+  ``static/markdown/books/{book}/{chapter:04}.md`` (``markdown`` matches the
   requested directory name).
 * Collect every snippet of formatted text and record it in
   ``static/json/format.json``.
@@ -419,7 +419,7 @@ def write_css_summary(path: Path, summary: Dict[int, Dict[str, object]]) -> None
 def main() -> None:
     root = Path("static") / "epub"
     html_root = Path("static") / "html" / "books"
-    markdown_root = Path("static") / "markdowm" / "books"
+    markdown_root = Path("static") / "markdown" / "books"
     format_json_path = Path("static") / "json" / "format.json"
     css_summary_path = Path("static") / "json" / "css_styles.json"
 
