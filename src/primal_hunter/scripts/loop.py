@@ -204,9 +204,9 @@ def main(
             epub_dir = os.path.join(root, d)
             # gather XHTML files
             xhtml_files = [
-                os.path.join(epub_dir, f)
-                for f in os.listdir(epub_dir)
-                if f.endswith(".xhtml")
+                str(p)
+                for p in Path(epub_dir).rglob("*.xhtml", case_sensitive=False)
+                if p.is_file()
             ]
             if len(xhtml_files) > 1:
                 # build class_styles by parsing first file's soup (stylesheet

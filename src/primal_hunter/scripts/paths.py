@@ -30,8 +30,10 @@ with progress:
         html_file_count = len(list(book_dir.glob("**/*.html")))
         html_file_task = progress.add_task("Searching for HTML files...", total=html_file_count)
         html_files: List[Path] = []
-        html_files = [p for p in book_dir.rglob(
-            "*.html") if p.is_file() and p.suffix.lower() == ".html"
+        html_files = [
+            str(p)
+            for p in book_dir.rglob("*.html", case_sensitive=False)
+            if p.is_file()
         ]
         if len(html_files) > 1:
             # build class_styles by parsing first file's soup (stylesheet
