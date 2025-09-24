@@ -1,0 +1,17 @@
+{
+    "folders": [
+        {
+            "path": ".."
+        }
+    ],
+    "settings": {
+        "python.linting.mypyEnabled": true,
+        "python.linting.mypyArgs": [
+            "--disable-error-code=import-untyped"
+        ],
+        "cSpell.ignoreWords": [
+            "pparse",
+            "timespec"
+        ]
+    }
+}

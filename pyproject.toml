@@ -1,0 +1,45 @@
+[project]
+name = "primal-hunter"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [{ name = "Maxwell Ludden", email = "max@ludden.dev" }]
+requires-python = ">=3.13"
+dependencies = [
+    "bs4>=0.0.2",
+    "ebooklib>=0.19",
+    "markdownify>=0.11.6",
+    "pymongo>=4.10.1",
+    "requests>=2.32.5",
+    "rich>=14.1.0",
+    "rich-color-ext>=0.1.4",
+    "rich-gradient>=0.3.6",
+    "types-requests>=2.32.4.20250913",
+    "pendulum>=2.1.0",
+    "pydantic>=2.11.9",
+    "pydantic-settings>=2.10.1",
+    "beanie>=2.0.0",
+    "motor>=3.7.1",
+    "asyncio>=4.0.0",
+    "pypandoc>=1.15",
+    "sh>=2.2.2",
+    "scrapy>=2.13.3",
+]
+
+[project.scripts]
+primal-hunter = "primal_hunter:main"
+
+[build-system]
+requires = ["uv_build>=0.8.17,<0.9.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = ["mypy>=1.18.2", "pip>=25.2"]
+
+[tool.mypy]
+ignore_missing_imports = true
+follow_imports = "silent"
+
+[tool.ruff]
+line-length = 88
+ignore = ["F401"]
