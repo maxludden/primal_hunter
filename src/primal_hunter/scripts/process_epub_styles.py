@@ -192,19 +192,12 @@ def parse_css_sources(
     Returns:
         Tuple containing the selector-to-style mapping and grouped style summaries.
     """
-    # Materialize the incoming iterables to lists so we can safely take len()
-    # and iterate multiple times without risking consumption of generators.
-    css_list: List[Path] = list(css_files)
-    inline_list: List[str] = list(inline_css)
-
-    log.trace(
-        f"Entered parse_css_sources(css_files={css_list}, "
-        f"inline_css=[{len(inline_list)} blocks])"
-    )
+    log.trace("Entered parse_css_sources")
     selector_map: SelectorStyles = {}
     grouped_styles: Dict[Tuple[Tuple[str, str], ...], StyleGroup] = {}
 
-    for css_path in css_list:
+    css_file_count = 0
+    for css_path in css_files:
         try:
             sheet = cssutils.parseFile(css_path)
 
@@ -227,8 +220,10 @@ with {len(sheet.cssRules)} rules"
             log.warning(f"Failed to parse CSS file {css_path}:\n\n {exc}")
             continue
         _merge_sheet(sheet, selector_map, grouped_styles)
+        css_file_count += 1
 
-    for css_text in inline_list:
+    inline_block_count = 0
+    for css_text in inline_css:
         if not css_text.strip():
             continue
         try:
@@ -253,6 +248,11 @@ with {len(sheet.cssRules)} rules"
             log.warning("Failed to parse inline CSS block: %s", exc)
             continue
         _merge_sheet(sheet, selector_map, grouped_styles)
+        inline_block_count += 1
+
+    log.trace(
+        "Processed %s CSS files and %s inline blocks", css_file_count, inline_block_count
+    )
 
     # Convert grouped_styles to a list with stable ordering for potential serialization
     ordered_groups: List[StyleGroup] = []

@@ -72,8 +72,8 @@ def fetch_toc() -> str:
     return resp.text
 
 
-def _iter_chapter_rows(soup: BeautifulSoup) -> Iterable[Tag]:
-    """Yield each chapter row from the RoyalRoad TOC table."""
+def _iter_chapter_rows(soup: BeautifulSoup) -> List[Tag]:
+    """Return each chapter row from the RoyalRoad TOC table."""
 
     return soup.select("table#chapters tbody tr.chapter-row")
 
@@ -89,7 +89,7 @@ def parse_chapters(html: str) -> List[ChapterRecord]:
             chapter number, title, URL, and published timestamp (UTC ``datetime``).
     """
     soup = BeautifulSoup(html, "html.parser")
-    rows = list(_iter_chapter_rows(soup))
+    rows = _iter_chapter_rows(soup)
     chapters: List[ChapterRecord] = []
 
     log.trace(f"Parsing {len(rows)} chapter rows...")

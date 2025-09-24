@@ -8,7 +8,7 @@ import json
 import os
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any, Mapping, NamedTuple, Optional, TypedDict
+from typing import Any, Iterable, Iterator, Mapping, NamedTuple, Optional, TypedDict
 
 import requests
 from beanie import init_beanie
@@ -184,13 +184,43 @@ payload {candidate}; using payload value"
     return entry
 
 
-def load_toc() -> list[ChapterPayload]:
-    """Return the table of contents entries sorted by chapter number.
+def _iter_toc_entries(raw_data: Any) -> Iterator[ChapterPayload]:
+    """Yield normalized TOC entries while deduplicating chapter numbers."""
 
-    The TOC is persisted as a mapping keyed by the chapter number string.  This
-    helper normalizes the structure into a list of `ChapterPayload` items for
-    downstream consumers that expect sequence semantics.
-    """
+    seen_chapters: set[int] = set()
+
+    if isinstance(raw_data, dict):
+        ordered_keys = sorted(raw_data.keys(), key=lambda value: int(str(value)))
+        iterator: Iterable[tuple[str, Any]] = (
+            (str(key), raw_data[key]) for key in ordered_keys
+        )
+    elif isinstance(raw_data, list):
+        iterator = ((str(item.get("chapter")), item) for item in raw_data)
+    else:  # pragma: no cover - defensive
+        raise TypeError("Unsupported TOC structure; expected mapping or sequence")
+
+    for chapter_key, payload in iterator:
+        if not isinstance(payload, dict):
+            log.warning(f"Skipping malformed TOC entry for chapter {chapter_key}")
+            continue
+
+        entry = _normalize_toc_entry(chapter_key=chapter_key, payload=payload)
+        if not entry:
+            continue
+
+        chapter_num = entry["chapter"]
+        if chapter_num in seen_chapters:
+            log.warning(
+                f"Duplicate TOC entry for chapter {chapter_num} detected; skipping"
+            )
+            continue
+
+        seen_chapters.add(chapter_num)
+        yield entry
+
+
+def load_toc() -> tuple[Iterator[ChapterPayload], int]:
+    """Return a streaming iterator for TOC entries and the expected total count."""
 
     if not TOC_PATH.exists():
         msg = f"TOC file not found: {TOC_PATH}"
@@ -199,55 +229,25 @@ def load_toc() -> list[ChapterPayload]:
     with TOC_PATH.open("r", encoding="utf-8") as handle:
         raw_data = json.load(handle)
 
-    toc_entries: list[ChapterPayload] = []
-    seen_chapters: set[int] = set()
     if isinstance(raw_data, dict):
-        for chapter_key, payload in raw_data.items():
-            if not isinstance(payload, dict):
-                log.warning(
-                    f"Skipping malformed TOC entry for chapter {chapter_key}"
-                )
-                continue
-
-            entry = _normalize_toc_entry(chapter_key=str(chapter_key), payload=payload)
-            if entry:
-                if entry["chapter"] in seen_chapters:
-                    log.warning(
-                        f"Duplicate TOC entry for chapter {entry['chapter']} detected; skipping"
-                    )
-                    continue
-                seen_chapters.add(entry["chapter"])
-                toc_entries.append(entry)
+        expected = len(raw_data)
     elif isinstance(raw_data, list):
-        # Backwards compatibility for legacy list-based TOCs.
-        for item in raw_data:
-            if not isinstance(item, dict):
-                log.warning("Skipping malformed legacy TOC entry")
-                continue
-            chapter_value = item.get("chapter")
-            if chapter_value is None:
-                log.warning("Skipping legacy TOC entry missing chapter field")
-                continue
+        expected = len(raw_data)
+    else:
+        raise TypeError("Unsupported TOC structure; expected mapping or sequence")
 
-            entry = _normalize_toc_entry(
-                chapter_key=str(chapter_value), payload=item
+    def iterator() -> Iterator[ChapterPayload]:
+        produced = 0
+        try:
+            for entry in _iter_toc_entries(raw_data):
+                produced += 1
+                yield entry
+        finally:
+            log.success(
+                f"Loaded TOC with {produced} chapters from {TOC_PATH}"
             )
-            if entry:
-                if entry["chapter"] in seen_chapters:
-                    log.warning(
-                        f"Duplicate legacy TOC entry for chapter {entry['chapter']} detected; skipping"
-                    )
-                    continue
-                seen_chapters.add(entry["chapter"])
-                toc_entries.append(entry)
-    else:  # pragma: no cover - defensive
-        raise TypeError(
-            "Unsupported TOC structure; expected mapping or sequence"
-        )
 
-    toc_entries.sort(key=lambda entry: entry["chapter"])
-    log.success(f"Loaded TOC with {len(toc_entries)} chapters from {TOC_PATH}")
-    return toc_entries
+    return iterator(), expected
 
 
 async def fetch_chapter(url: str) -> Optional[str]:
@@ -302,11 +302,42 @@ def _formatted_html(container: Tag) -> str:
 
 
 def _display_chapter_preview(
-    *, title: str, url: str, published: Optional[datetime], content: str
+    *,
+    chapter: int,
+    title: str,
+    url: str,
+    published: Optional[datetime],
+    content: str,
+    max_preview_chars: int = 2000,
 ) -> None:
     """Render a chapter snippet to the Rich console."""
 
-    text = "\n\n".join(line.strip() for line in content.splitlines() if line.strip())
+    preview_lines: list[str] = []
+    consumed = 0
+    truncated = False
+    for raw_line in content.splitlines():
+        line = raw_line.strip()
+        if not line:
+            continue
+
+        remaining = max_preview_chars - consumed
+        if remaining <= 0:
+            truncated = True
+            break
+
+        if len(line) > remaining:
+            preview_lines.append(line[:remaining].rstrip() + "…")
+            consumed = max_preview_chars
+            truncated = True
+            break
+
+        preview_lines.append(line)
+        consumed += len(line) + 2  # account for the artificial paragraph spacing
+
+    text = "\n\n".join(preview_lines)
+    if truncated and text:
+        text += "\n\n_(preview truncated)_"
+
     idx = url.find("/chapter/")
     subtitle_url = url[idx:] if idx != -1 else url
     if isinstance(published, datetime):
@@ -316,7 +347,7 @@ def _display_chapter_preview(
     else:
         published_text = None
 
-    title = f"Chapter {chapter} = {title}" if title else f"Chapter {chapter}"
+    heading = f"Chapter {chapter}: {title}" if title else f"Chapter {chapter}"
 
     panel_subtitle = (
         f"{subtitle_url} | Published: {published_text}"
@@ -328,7 +359,7 @@ def _display_chapter_preview(
         console.print(
             Panel(
                 Markdown(text or "_(no content extracted)_"),
-                title=Text(title, colors=["#95FF00", "#37FF00"], style="bold"),
+                title=Text(heading, colors=["#95FF00", "#37FF00"], style="bold"),
                 subtitle=panel_subtitle,
                 border_style="#006400",
             )
@@ -358,6 +389,7 @@ def extract_content(html: str, *, chapter: ChapterPayload) -> ChapterContent:
     content_text: str = container.get_text(separator="\n\n", strip=True)
     formatted_html = _formatted_html(container)
     _display_chapter_preview(
+        chapter=chapter["chapter"],
         title=title,
         url=chapter["url"],
         published=chapter.get("published"),
@@ -469,9 +501,11 @@ async def process_chapter(chapter_data: ChapterPayload) -> None:
 async def scrape_chapters() -> None:
     """Iterate through the TOC and persist each chapter."""
 
-    toc_entries = load_toc()
+    toc_entries, expected_total = load_toc()
     with progress as progress_bar:
-        task_id = progress_bar.add_task("Scraping chapters...", total=len(toc_entries))
+        task_id = progress_bar.add_task(
+            "Scraping chapters...", total=expected_total or None
+        )
         for chapter in toc_entries:
             await process_chapter(chapter)
             progress_bar.advance(task_id)
