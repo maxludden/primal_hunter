@@ -468,6 +468,7 @@ def apply_styles_to_soup(
     selector_styles: SelectorStyles,
     book_number: int,
     chapter_index: int,
+    entry_sink: Optional[Callable[[FormattedEntry], None]] = None,
 ) -> Tuple[str, List[FormattedEntry]]:
     """Apply CSS-derived styles to ``soup`` and capture formatted text occurrences.
 
@@ -476,9 +477,12 @@ def apply_styles_to_soup(
         selector_styles: Mapping of CSS selectors to normalized property dictionaries.
         book_number: Numeric identifier associated with the current book directory.
         chapter_index: 1-based index for the chapter within the book.
+        entry_sink: Optional callback that receives each formatted entry as it is found.
 
     Returns:
-        Tuple of serialized HTML string and the collected formatted text entries.
+        Tuple of serialized HTML string and the collected formatted text entries. When
+        ``entry_sink`` is provided the returned list will be empty, allowing callers
+        to bypass accumulating all entries in memory.
     """
     element_styles: defaultdict[int, PropertyDict] = defaultdict(dict)
 
@@ -492,7 +496,7 @@ def apply_styles_to_soup(
             eid = id(element)
             element_styles[eid] = merge_styles(element_styles[eid], style)
 
-    formatted_entries: List[FormattedEntry] = []
+    collected_entries: Optional[List[FormattedEntry]] = [] if entry_sink is None else None
     tag_cascaded_styles: Dict[int, PropertyDict] = {}
 
     bold_values = {"bold", "700", "600", "800", "900"}
@@ -641,10 +645,14 @@ def apply_styles_to_soup(
             "text": normalized_text,
             "format": ", ".join(sorted(labels)),
         }
-        formatted_entries.append(entry)
+        if entry_sink is not None:
+            entry_sink(entry)
+        else:
+            assert collected_entries is not None
+            collected_entries.append(entry)
 
     html_output = soup.decode()
-    return html_output, formatted_entries
+    return html_output, collected_entries if collected_entries is not None else []
 
 
 def convert_html_to_markdown(pandoc: Pandoc, html: str) -> str:
@@ -665,7 +673,7 @@ def process_book(
     html_output_dir: Path,
     markdown_output_dir: Path,
     pandoc: Pandoc,
-    entry_sink: Callable[[Iterable[FormattedEntry]], None],
+    entry_sink: Optional[Callable[[FormattedEntry], None]] = None,
 ) -> CssSummary:
     """Process every HTML file in ``book_dir`` and stream formatted entries.
 
@@ -674,7 +682,8 @@ def process_book(
         html_output_dir: Destination directory for generated inline-styled HTML.
         markdown_output_dir: Destination directory for Markdown conversions.
         pandoc: Pandoc wrapper configured for conversions.
-        entry_sink: Callback that consumes formatted text entries for persistence.
+        entry_sink: Callback that consumes formatted text entries for persistence. When
+            not provided, entries are collected in memory and discarded.
 
     Returns:
         CSS summary describing selectors and grouped property declarations.
@@ -714,13 +723,13 @@ def process_book(
         else:
             combined_styles = base_selector_styles
 
-        html_string, entries = apply_styles_to_soup(
+        html_string, _entries = apply_styles_to_soup(
             soup,
             combined_styles,
             book_number,
             chapter_index,
+            entry_sink=entry_sink,
         )
-        entry_sink(entries)
 
         chapter_html_path = html_output_dir / f"{chapter_index:04}.html"
         chapter_html_path.parent.mkdir(parents=True, exist_ok=True)
@@ -782,7 +791,7 @@ def main() -> None:
                 html_output_dir,
                 markdown_output_dir,
                 pandoc,
-                format_writer.write_many,
+                format_writer.write,
             )
             css_summary[book_number] = summary
 
