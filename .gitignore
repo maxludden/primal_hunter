@@ -8,7 +8,6 @@ wheels/
 
 # Virtual environments
 .venv
-static
+static/img
 .env
-*.epub
 v1

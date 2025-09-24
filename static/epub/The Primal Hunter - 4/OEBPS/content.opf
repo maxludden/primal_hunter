@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package version="2.0" xmlns="http://www.idpf.org/2007/opf" unique-identifier="uid">
+<metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf">
+<dc:title>The Primal Hunter 4</dc:title>
+<dc:language>en</dc:language>
+<dc:identifier id="uid">3174086135</dc:identifier>
+<dc:creator>Zogarth</dc:creator>
+<dc:publisher>Aethon Books</dc:publisher>
+<dc:date opf:event="publication">2022-12-06</dc:date>
+<!-- THE FOLLOWINGS ARE REQUIRED TO EDIT IDS MANUALLY
+<meta refines="#creator" scheme="marc:relators" property="role">aut</meta>
+<meta refines="#pub-id" scheme="xsd:string" property="identifier-type">uuid</meta>
+-->
+<!-- Extra MetaData from RESC
+<meta property="dcterms:modified">2022-12-02T21:53:38Z</meta>
+<meta property="ibooks:specified-fonts">true</meta>
+<meta property="schema:accessMode">textual</meta>
+<meta property="schema:accessMode">visual</meta>
+<meta property="schema:accessModeSufficient">textual,visual</meta>
+<meta property="schema:accessibilityFeature">structuralNavigation</meta>
+<meta property="schema:accessibilityFeature">tableOfContents</meta>
+<meta property="schema:accessibilityFeature">readingOrder</meta>
+<meta property="schema:accessibilityHazard">none</meta>
+<meta property="schema:accessibilitySummary">The structure and markup of this publication follow WCAG guidelines. Images used in this publication have not been verified to follow these guidelines. Some, but not all, images integral to the content include alternate text descriptions. This summary has been automatically generated based on the content of this publication.</meta>
+<meta name="generator" content="Vellum"/>
+<meta name="vellum-version" content="3.4"/>
+<meta name="vellum-target-platform" content="Kindle"/>
+-->
+<meta name="cover" content="cover_img" />
+<meta name="output encoding" content="utf-8" />
+<meta name="primary-writing-mode" content="horizontal-lr" />
+<!-- BEGIN INFORMATION ONLY 
+<meta name="Cover ThumbNail Image" content="Images/thumb00477.jpeg" />
+<meta name="Drm Ebookbase Book Id" content="0000050960843" />
+<meta name="ASIN" content="B0B8FTNMS9" />
+<meta name="Amazon_Creator_Info" content="dtc" />
+<meta name="Container_Id" content="fLKf" />
+<meta name="Content-Language-Tag" content="en" />
+<meta name="MetadataResourceURI" content="kindle:embed:000F" />
+<meta name="Metadata-Record-Offset" content="4294967295" />
+<meta name="Font-Signature_(hex)" content="0300008000000000000000000000008000200000000000000000000000000000f4edecbe01a901e701ef4094409340994098409c409d40a640bd" />
+<meta name="Creator-Software" content="201" />
+<meta name="Creator-Major-Version" content="2" />
+<meta name="Creator-Minor-Version" content="9" />
+<meta name="Creator-Build-Tag" content="0721-dedaf5" />
+<meta name="Creator-Build-Number" content="0" />
+<meta name="547 (hex)" content="496e4d656d6f7279" />
+<meta name="Embedded-Record-Count" content="16" />
+<meta name="HasFakeCover" content="0" />
+<meta name="Mobi8-Boundary-Section" content="405" />
+<meta name="HD-Media-Containers-Info" content="2400x3840:0-16|" />
+<meta name="548 (hex)" content="496e4d656d6f7279" />
+<meta name="Compression-Upgraded" content="Source-Target:c1-c2 KT_Version:2.9 Build:0000-kdevbld" />
+<meta name="sample" content="0" />
+<meta name="StartOffset" content="42352" />
+<meta name="CDEContentKey" content="B0B8FTNMS9" />
+<meta name="override-kindle-fonts" content="false" />
+<meta name="Updated_Title" content="Primal Hunter 4: A LitRPG Adventure (The Primal Hunter)" />
+<meta name="Ownership-Type_(hex)" content="00" />
+<meta name="Rental-Expiration-Time" content="0000000000000000" />
+<meta name="Unknown_(407)_(hex)" content="0000000000000000" />
+<meta name="Tamper-Proof-Keys_(hex)" content="01000000d000000001940000000191000000019500000001960000000197" />
+<meta name="Clipping-Limit" content="100" />
+<meta name="Unknown_(403)_(hex)" content="00" />
+<meta name="Text-to-Speech-Disabled" content="0" />
+<meta name="cdeType" content="EBOK" />
+<meta name="Watermark_(hex)" content="000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" />
+END INFORMATION ONLY -->
+</metadata>
+<manifest>
+<item id="inserted" media-type="application/xhtml+xml" href="Text/cover_page.xhtml" />
+<item id="x_the-primal-hunter-4-xhtml" media-type="application/xhtml+xml" href="Text/part0000.xhtml" />
+<item id="x_copyright-xhtml" media-type="application/xhtml+xml" href="Text/part0001.xhtml" />
+<item id="x_also-by-zogarth-xhtml" media-type="application/xhtml+xml" href="Text/part0002.xhtml" />
+<item id="x_contents-xhtml" media-type="application/xhtml+xml" href="Text/part0003.xhtml" />
+<item id="x_previously-on-the-primal-hunter-xhtml" media-type="application/xhtml+xml" href="Text/part0004.xhtml" />
+<item id="x_chapter-001-xhtml" media-type="application/xhtml+xml" href="Text/part0005.xhtml" />
+<item id="x_chapter-002-xhtml" media-type="application/xhtml+xml" href="Text/part0006.xhtml" />
+<item id="x_chapter-003-xhtml" media-type="application/xhtml+xml" href="Text/part0007.xhtml" />
+<item id="x_chapter-004-xhtml" media-type="application/xhtml+xml" href="Text/part0008.xhtml" />
+<item id="x_chapter-005-xhtml" media-type="application/xhtml+xml" href="Text/part0009.xhtml" />
+<item id="x_chapter-006-xhtml" media-type="application/xhtml+xml" href="Text/part0010.xhtml" />
+<item id="x_chapter-007-xhtml" media-type="application/xhtml+xml" href="Text/part0011.xhtml" />
+<item id="x_chapter-008-xhtml" media-type="application/xhtml+xml" href="Text/part0012.xhtml" />
+<item id="x_chapter-009-xhtml" media-type="application/xhtml+xml" href="Text/part0013.xhtml" />
+<item id="x_chapter-010-xhtml" media-type="application/xhtml+xml" href="Text/part0014.xhtml" />
+<item id="x_chapter-011-xhtml" media-type="application/xhtml+xml" href="Text/part0015.xhtml" />
+<item id="x_chapter-012-xhtml" media-type="application/xhtml+xml" href="Text/part0016.xhtml" />
+<item id="x_chapter-013-xhtml" media-type="application/xhtml+xml" href="Text/part0017.xhtml" />
+<item id="x_chapter-014-xhtml" media-type="application/xhtml+xml" href="Text/part0018.xhtml" />
+<item id="x_chapter-015-xhtml" media-type="application/xhtml+xml" href="Text/part0019.xhtml" />
+<item id="x_chapter-016-xhtml" media-type="application/xhtml+xml" href="Text/part0020.xhtml" />
+<item id="x_chapter-017-xhtml" media-type="application/xhtml+xml" href="Text/part0021.xhtml" />
+<item id="x_chapter-018-xhtml" media-type="application/xhtml+xml" href="Text/part0022.xhtml" />
+<item id="x_chapter-019-xhtml" media-type="application/xhtml+xml" href="Text/part0023.xhtml" />
+<item id="x_chapter-020-xhtml" media-type="application/xhtml+xml" href="Text/part0024.xhtml" />
+<item id="x_chapter-021-xhtml" media-type="application/xhtml+xml" href="Text/part0025.xhtml" />
+<item id="x_chapter-022-xhtml" media-type="application/xhtml+xml" href="Text/part0026.xhtml" />
+<item id="x_chapter-023-xhtml" media-type="application/xhtml+xml" href="Text/part0027.xhtml" />
+<item id="x_intermission-8---william-13-xhtml" media-type="application/xhtml+xml" href="Text/part0028.xhtml" />
+<item id="x_intermission-8---william-23-xhtml" media-type="application/xhtml+xml" href="Text/part0029.xhtml" />
+<item id="x_intermission-8---william-33-xhtml" media-type="application/xhtml+xml" href="Text/part0030.xhtml" />
+<item id="x_chapter-024-xhtml" media-type="application/xhtml+xml" href="Text/part0031.xhtml" />
+<item id="x_chapter-025-xhtml" media-type="application/xhtml+xml" href="Text/part0032.xhtml" />
+<item id="x_chapter-026-xhtml" media-type="application/xhtml+xml" href="Text/part0033.xhtml" />
+<item id="x_chapter-027-xhtml" media-type="application/xhtml+xml" href="Text/part0034.xhtml" />
+<item id="x_chapter-028-xhtml" media-type="application/xhtml+xml" href="Text/part0035.xhtml" />
+<item id="x_chapter-029-xhtml" media-type="application/xhtml+xml" href="Text/part0036.xhtml" />
+<item id="x_chapter-030-xhtml" media-type="application/xhtml+xml" href="Text/part0037.xhtml" />
+<item id="x_chapter-031-xhtml" media-type="application/xhtml+xml" href="Text/part0038.xhtml" />
+<item id="x_chapter-032-xhtml" media-type="application/xhtml+xml" href="Text/part0039.xhtml" />
+<item id="x_chapter-033-xhtml" media-type="application/xhtml+xml" href="Text/part0040.xhtml" />
+<item id="x_chapter-034-xhtml" media-type="application/xhtml+xml" href="Text/part0041.xhtml" />
+<item id="x_chapter-035-xhtml" media-type="application/xhtml+xml" href="Text/part0042.xhtml" />
+<item id="x_chapter-036-xhtml" media-type="application/xhtml+xml" href="Text/part0043.xhtml" />
+<item id="x_chapter-037-xhtml" media-type="application/xhtml+xml" href="Text/part0044.xhtml" />
+<item id="x_chapter-038-xhtml" media-type="application/xhtml+xml" href="Text/part0045.xhtml" />
+<item id="x_chapter-039-xhtml" media-type="application/xhtml+xml" href="Text/part0046.xhtml" />
+<item id="x_chapter-040-xhtml" media-type="application/xhtml+xml" href="Text/part0047.xhtml" />
+<item id="x_chapter-041-xhtml" media-type="application/xhtml+xml" href="Text/part0048.xhtml" />
+<item id="x_chapter-042-xhtml" media-type="application/xhtml+xml" href="Text/part0049.xhtml" />
+<item id="x_chapter-043-xhtml" media-type="application/xhtml+xml" href="Text/part0050.xhtml" />
+<item id="x_chapter-044-xhtml" media-type="application/xhtml+xml" href="Text/part0051.xhtml" />
+<item id="x_chapter-045-xhtml" media-type="application/xhtml+xml" href="Text/part0052.xhtml" />
+<item id="x_chapter-046-xhtml" media-type="application/xhtml+xml" href="Text/part0053.xhtml" />
+<item id="x_chapter-047-xhtml" media-type="application/xhtml+xml" href="Text/part0054.xhtml" />
+<item id="x_chapter-048-xhtml" media-type="application/xhtml+xml" href="Text/part0055.xhtml" />
+<item id="x_chapter-049-xhtml" media-type="application/xhtml+xml" href="Text/part0056.xhtml" />
+<item id="x_chapter-050-xhtml" media-type="application/xhtml+xml" href="Text/part0057.xhtml" />
+<item id="x_chapter-051-xhtml" media-type="application/xhtml+xml" href="Text/part0058.xhtml" />
+<item id="x_chapter-052-xhtml" media-type="application/xhtml+xml" href="Text/part0059.xhtml" />
+<item id="x_chapter-053-xhtml" media-type="application/xhtml+xml" href="Text/part0060.xhtml" />
+<item id="x_chapter-054-xhtml" media-type="application/xhtml+xml" href="Text/part0061.xhtml" />
+<item id="x_chapter-055-xhtml" media-type="application/xhtml+xml" href="Text/part0062.xhtml" />
+<item id="x_chapter-056-xhtml" media-type="application/xhtml+xml" href="Text/part0063.xhtml" />
+<item id="x_chapter-057-xhtml" media-type="application/xhtml+xml" href="Text/part0064.xhtml" />
+<item id="x_chapter-058-xhtml" media-type="application/xhtml+xml" href="Text/part0065.xhtml" />
+<item id="x_chapter-059-xhtml" media-type="application/xhtml+xml" href="Text/part0066.xhtml" />
+<item id="x_chapter-060-xhtml" media-type="application/xhtml+xml" href="Text/part0067.xhtml" />
+<item id="x_chapter-061-xhtml" media-type="application/xhtml+xml" href="Text/part0068.xhtml" />
+<item id="x_chapter-062-xhtml" media-type="application/xhtml+xml" href="Text/part0069.xhtml" />
+<item id="x_chapter-063-xhtml" media-type="application/xhtml+xml" href="Text/part0070.xhtml" />
+<item id="x_chapter-064-xhtml" media-type="application/xhtml+xml" href="Text/part0071.xhtml" />
+<item id="x_chapter-065-xhtml" media-type="application/xhtml+xml" href="Text/part0072.xhtml" />
+<item id="x_chapter-066-xhtml" media-type="application/xhtml+xml" href="Text/part0073.xhtml" />
+<item id="x_chapter-067-xhtml" media-type="application/xhtml+xml" href="Text/part0074.xhtml" />
+<item id="x_chapter-068-xhtml" media-type="application/xhtml+xml" href="Text/part0075.xhtml" />
+<item id="x_chapter-069-xhtml" media-type="application/xhtml+xml" href="Text/part0076.xhtml" />
+<item id="x_chapter-070-xhtml" media-type="application/xhtml+xml" href="Text/part0077.xhtml" />
+<item id="x_chapter-071-xhtml" media-type="application/xhtml+xml" href="Text/part0078.xhtml" />
+<item id="x_chapter-072-xhtml" media-type="application/xhtml+xml" href="Text/part0079.xhtml" />
+<item id="x_chapter-073-xhtml" media-type="application/xhtml+xml" href="Text/part0080.xhtml" />
+<item id="x_chapter-074-xhtml" media-type="application/xhtml+xml" href="Text/part0081.xhtml" />
+<item id="x_chapter-075-xhtml" media-type="application/xhtml+xml" href="Text/part0082.xhtml" />
+<item id="x_chapter-076-xhtml" media-type="application/xhtml+xml" href="Text/part0083.xhtml" />
+<item id="x_thank-you-for-reading-the-primal-hunter-4-xhtml" media-type="application/xhtml+xml" href="Text/part0084.xhtml" />
+<item id="item86" media-type="text/css" href="Styles/style0001.css" />
+<item id="item87" media-type="text/css" href="Styles/style0002.css" />
+<item id="item88" media-type="image/svg+xml" href="Images/svgimg0003.svg" />
+<item id="item89" media-type="application/x-font-ttf" href="Fonts/font00462.ttf" />
+<item id="item90" media-type="application/x-font-ttf" href="Fonts/font00463.ttf" />
+<item id="item91" media-type="application/x-font-ttf" href="Fonts/font00464.ttf" />
+<item id="item92" media-type="image/jpeg" href="Images/image00465.jpeg" />
+<item id="item93" media-type="image/jpeg" href="Images/image00466.jpeg" />
+<item id="item94" media-type="image/jpeg" href="Images/image00467.jpeg" />
+<item id="item95" media-type="image/jpeg" href="Images/image00468.jpeg" />
+<item id="item96" media-type="image/jpeg" href="Images/image00469.jpeg" />
+<item id="item97" media-type="image/jpeg" href="Images/image00470.jpeg" />
+<item id="item98" media-type="image/jpeg" href="Images/image00471.jpeg" />
+<item id="item99" media-type="image/jpeg" href="Images/image00472.jpeg" />
+<item id="item100" media-type="image/jpeg" href="Images/image00473.jpeg" />
+<item id="item101" media-type="image/jpeg" href="Images/image00474.jpeg" />
+<item id="cover_img" media-type="image/jpeg" href="Images/cover00475.jpeg" />
+<item id="ncx" media-type="application/x-dtbncx+xml" href="toc.ncx" />
+</manifest>
+<spine toc="ncx">
+<itemref idref="inserted" linear="no"/>
+<itemref idref="x_the-primal-hunter-4-xhtml"/>
+<itemref idref="x_copyright-xhtml"/>
+<itemref idref="x_also-by-zogarth-xhtml"/>
+<itemref idref="x_contents-xhtml"/>
+<itemref idref="x_previously-on-the-primal-hunter-xhtml"/>
+<itemref idref="x_chapter-001-xhtml"/>
+<itemref idref="x_chapter-002-xhtml"/>
+<itemref idref="x_chapter-003-xhtml"/>
+<itemref idref="x_chapter-004-xhtml"/>
+<itemref idref="x_chapter-005-xhtml"/>
+<itemref idref="x_chapter-006-xhtml"/>
+<itemref idref="x_chapter-007-xhtml"/>
+<itemref idref="x_chapter-008-xhtml"/>
+<itemref idref="x_chapter-009-xhtml"/>
+<itemref idref="x_chapter-010-xhtml"/>
+<itemref idref="x_chapter-011-xhtml"/>
+<itemref idref="x_chapter-012-xhtml"/>
+<itemref idref="x_chapter-013-xhtml"/>
+<itemref idref="x_chapter-014-xhtml"/>
+<itemref idref="x_chapter-015-xhtml"/>
+<itemref idref="x_chapter-016-xhtml"/>
+<itemref idref="x_chapter-017-xhtml"/>
+<itemref idref="x_chapter-018-xhtml"/>
+<itemref idref="x_chapter-019-xhtml"/>
+<itemref idref="x_chapter-020-xhtml"/>
+<itemref idref="x_chapter-021-xhtml"/>
+<itemref idref="x_chapter-022-xhtml"/>
+<itemref idref="x_chapter-023-xhtml"/>
+<itemref idref="x_intermission-8---william-13-xhtml"/>
+<itemref idref="x_intermission-8---william-23-xhtml"/>
+<itemref idref="x_intermission-8---william-33-xhtml"/>
+<itemref idref="x_chapter-024-xhtml"/>
+<itemref idref="x_chapter-025-xhtml"/>
+<itemref idref="x_chapter-026-xhtml"/>
+<itemref idref="x_chapter-027-xhtml"/>
+<itemref idref="x_chapter-028-xhtml"/>
+<itemref idref="x_chapter-029-xhtml"/>
+<itemref idref="x_chapter-030-xhtml"/>
+<itemref idref="x_chapter-031-xhtml"/>
+<itemref idref="x_chapter-032-xhtml"/>
+<itemref idref="x_chapter-033-xhtml"/>
+<itemref idref="x_chapter-034-xhtml"/>
+<itemref idref="x_chapter-035-xhtml"/>
+<itemref idref="x_chapter-036-xhtml"/>
+<itemref idref="x_chapter-037-xhtml"/>
+<itemref idref="x_chapter-038-xhtml"/>
+<itemref idref="x_chapter-039-xhtml"/>
+<itemref idref="x_chapter-040-xhtml"/>
+<itemref idref="x_chapter-041-xhtml"/>
+<itemref idref="x_chapter-042-xhtml"/>
+<itemref idref="x_chapter-043-xhtml"/>
+<itemref idref="x_chapter-044-xhtml"/>
+<itemref idref="x_chapter-045-xhtml"/>
+<itemref idref="x_chapter-046-xhtml"/>
+<itemref idref="x_chapter-047-xhtml"/>
+<itemref idref="x_chapter-048-xhtml"/>
+<itemref idref="x_chapter-049-xhtml"/>
+<itemref idref="x_chapter-050-xhtml"/>
+<itemref idref="x_chapter-051-xhtml"/>
+<itemref idref="x_chapter-052-xhtml"/>
+<itemref idref="x_chapter-053-xhtml"/>
+<itemref idref="x_chapter-054-xhtml"/>
+<itemref idref="x_chapter-055-xhtml"/>
+<itemref idref="x_chapter-056-xhtml"/>
+<itemref idref="x_chapter-057-xhtml"/>
+<itemref idref="x_chapter-058-xhtml"/>
+<itemref idref="x_chapter-059-xhtml"/>
+<itemref idref="x_chapter-060-xhtml"/>
+<itemref idref="x_chapter-061-xhtml"/>
+<itemref idref="x_chapter-062-xhtml"/>
+<itemref idref="x_chapter-063-xhtml"/>
+<itemref idref="x_chapter-064-xhtml"/>
+<itemref idref="x_chapter-065-xhtml"/>
+<itemref idref="x_chapter-066-xhtml"/>
+<itemref idref="x_chapter-067-xhtml"/>
+<itemref idref="x_chapter-068-xhtml"/>
+<itemref idref="x_chapter-069-xhtml"/>
+<itemref idref="x_chapter-070-xhtml"/>
+<itemref idref="x_chapter-071-xhtml"/>
+<itemref idref="x_chapter-072-xhtml"/>
+<itemref idref="x_chapter-073-xhtml"/>
+<itemref idref="x_chapter-074-xhtml"/>
+<itemref idref="x_chapter-075-xhtml"/>
+<itemref idref="x_chapter-076-xhtml"/>
+<itemref idref="x_thank-you-for-reading-the-primal-hunter-4-xhtml"/>
+</spine>
+<tours>
+</tours>
+<guide>
+<reference type="copyright-page" title="Copyright" href="Text/part0001.xhtml" />
+<reference type="text" title="Beginning" href="Text/part0004.xhtml" />
+<reference type="toc" title="Contents" href="Text/part0003.xhtml" />
+<reference type="other.z3998:published-works" title="Also by Zogarth" href="Text/part0002.xhtml" />
+<reference type="cover" title="Cover" href="Text/cover_page.xhtml" />
+</guide>
+</package>

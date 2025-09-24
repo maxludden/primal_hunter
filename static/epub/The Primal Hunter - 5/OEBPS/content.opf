@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package xmlns="http://www.idpf.org/2007/opf" xmlns:dc="http://purl.org/dc/elements/1.1/" version="3.0" unique-identifier="bookid" prefix="marc: http://id.loc.gov/vocabulary/">
+  <metadata>
+    <dc:identifier id="bookid">urn:asin:B0BNJGXC6J</dc:identifier>
+    <dc:title>The Primal Hunter 5: A LitRPG Adventure</dc:title>
+    <dc:creator id="creator0">Zogarth</dc:creator>
+    <meta refines="#creator0" property="role" scheme="marc:relators">aut</meta>
+    <dc:language>en</dc:language>
+    <dc:publisher>Aethon Books</dc:publisher>
+    <dc:date>2023-03-03</dc:date>
+    <meta property="dcterms:modified">2023-09-29T13:21:18Z</meta>
+    <meta name="cover" content="image_rsrc68F.jpg"/>
+  </metadata>
+  <manifest>
+    <item href="font_rsrc68D.ttf" id="font_rsrc68D.ttf" media-type="font/ttf"/>
+    <item href="font_rsrc68E.ttf" id="font_rsrc68E.ttf" media-type="font/ttf"/>
+    <item href="image_rsrc68F.jpg" id="image_rsrc68F.jpg" media-type="image/jpeg" properties="cover-image"/>
+    <item href="image_rsrc68G.jpg" id="image_rsrc68G.jpg" media-type="image/jpeg"/>
+    <item href="image_rsrc68H.jpg" id="image_rsrc68H.jpg" media-type="image/jpeg"/>
+    <item href="image_rsrc68J.jpg" id="image_rsrc68J.jpg" media-type="image/jpeg"/>
+    <item href="image_rsrc68K.jpg" id="image_rsrc68K.jpg" media-type="image/jpeg"/>
+    <item href="image_rsrc68M.jpg" id="image_rsrc68M.jpg" media-type="image/jpeg"/>
+    <item href="image_rsrc68N.jpg" id="image_rsrc68N.jpg" media-type="image/jpeg"/>
+    <item href="image_rsrc68P.jpg" id="image_rsrc68P.jpg" media-type="image/jpeg"/>
+    <item href="image_rsrc68R.jpg" id="image_rsrc68R.jpg" media-type="image/jpeg"/>
+    <item href="image_rsrc68S.jpg" id="image_rsrc68S.jpg" media-type="image/jpeg"/>
+    <item href="nav.xhtml" id="nav.xhtml" media-type="application/xhtml+xml" properties="nav"/>
+    <item href="part0000.xhtml" id="part0000.xhtml" media-type="application/xhtml+xml" properties="svg"/>
+    <item href="part0001.xhtml" id="part0001.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0002.xhtml" id="part0002.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0003.xhtml" id="part0003.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0004.xhtml" id="part0004.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0005.xhtml" id="part0005.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0006.xhtml" id="part0006.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0007.xhtml" id="part0007.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0008.xhtml" id="part0008.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0009.xhtml" id="part0009.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0010.xhtml" id="part0010.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0011.xhtml" id="part0011.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0012.xhtml" id="part0012.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0013.xhtml" id="part0013.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0014.xhtml" id="part0014.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0015.xhtml" id="part0015.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0016.xhtml" id="part0016.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0017.xhtml" id="part0017.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0018.xhtml" id="part0018.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0019.xhtml" id="part0019.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0020.xhtml" id="part0020.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0021.xhtml" id="part0021.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0022.xhtml" id="part0022.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0023.xhtml" id="part0023.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0024.xhtml" id="part0024.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0025.xhtml" id="part0025.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0026.xhtml" id="part0026.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0027.xhtml" id="part0027.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0028.xhtml" id="part0028.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0029.xhtml" id="part0029.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0030.xhtml" id="part0030.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0031.xhtml" id="part0031.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0032.xhtml" id="part0032.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0033.xhtml" id="part0033.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0034.xhtml" id="part0034.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0035.xhtml" id="part0035.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0036.xhtml" id="part0036.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0037.xhtml" id="part0037.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0038.xhtml" id="part0038.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0039.xhtml" id="part0039.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0040.xhtml" id="part0040.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0041.xhtml" id="part0041.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0042.xhtml" id="part0042.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0043.xhtml" id="part0043.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0044.xhtml" id="part0044.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0045.xhtml" id="part0045.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0046.xhtml" id="part0046.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0047.xhtml" id="part0047.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0048.xhtml" id="part0048.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0049.xhtml" id="part0049.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0050.xhtml" id="part0050.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0051.xhtml" id="part0051.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0052.xhtml" id="part0052.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0053.xhtml" id="part0053.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0054.xhtml" id="part0054.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0055.xhtml" id="part0055.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0056.xhtml" id="part0056.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0057.xhtml" id="part0057.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0058.xhtml" id="part0058.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0059.xhtml" id="part0059.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0060.xhtml" id="part0060.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0061.xhtml" id="part0061.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0062.xhtml" id="part0062.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0063.xhtml" id="part0063.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0064.xhtml" id="part0064.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0065.xhtml" id="part0065.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0066.xhtml" id="part0066.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0067.xhtml" id="part0067.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0068.xhtml" id="part0068.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0069.xhtml" id="part0069.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0070.xhtml" id="part0070.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0071.xhtml" id="part0071.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0072.xhtml" id="part0072.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0073.xhtml" id="part0073.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0074.xhtml" id="part0074.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0075.xhtml" id="part0075.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0076.xhtml" id="part0076.xhtml" media-type="application/xhtml+xml"/>
+    <item href="part0077.xhtml" id="part0077.xhtml" media-type="application/xhtml+xml"/>
+    <item href="stylesheet.css" id="stylesheet.css" media-type="text/css"/>
+    <item href="toc.ncx" id="toc.ncx" media-type="application/x-dtbncx+xml"/>
+  </manifest>
+  <spine toc="toc.ncx">
+    <itemref idref="part0000.xhtml"/>
+    <itemref idref="part0001.xhtml"/>
+    <itemref idref="part0002.xhtml"/>
+    <itemref idref="part0003.xhtml"/>
+    <itemref idref="part0004.xhtml"/>
+    <itemref idref="part0005.xhtml"/>
+    <itemref idref="part0006.xhtml"/>
+    <itemref idref="part0007.xhtml"/>
+    <itemref idref="part0008.xhtml"/>
+    <itemref idref="part0009.xhtml"/>
+    <itemref idref="part0010.xhtml"/>
+    <itemref idref="part0011.xhtml"/>
+    <itemref idref="part0012.xhtml"/>
+    <itemref idref="part0013.xhtml"/>
+    <itemref idref="part0014.xhtml"/>
+    <itemref idref="part0015.xhtml"/>
+    <itemref idref="part0016.xhtml"/>
+    <itemref idref="part0017.xhtml"/>
+    <itemref idref="part0018.xhtml"/>
+    <itemref idref="part0019.xhtml"/>
+    <itemref idref="part0020.xhtml"/>
+    <itemref idref="part0021.xhtml"/>
+    <itemref idref="part0022.xhtml"/>
+    <itemref idref="part0023.xhtml"/>
+    <itemref idref="part0024.xhtml"/>
+    <itemref idref="part0025.xhtml"/>
+    <itemref idref="part0026.xhtml"/>
+    <itemref idref="part0027.xhtml"/>
+    <itemref idref="part0028.xhtml"/>
+    <itemref idref="part0029.xhtml"/>
+    <itemref idref="part0030.xhtml"/>
+    <itemref idref="part0031.xhtml"/>
+    <itemref idref="part0032.xhtml"/>
+    <itemref idref="part0033.xhtml"/>
+    <itemref idref="part0034.xhtml"/>
+    <itemref idref="part0035.xhtml"/>
+    <itemref idref="part0036.xhtml"/>
+    <itemref idref="part0037.xhtml"/>
+    <itemref idref="part0038.xhtml"/>
+    <itemref idref="part0039.xhtml"/>
+    <itemref idref="part0040.xhtml"/>
+    <itemref idref="part0041.xhtml"/>
+    <itemref idref="part0042.xhtml"/>
+    <itemref idref="part0043.xhtml"/>
+    <itemref idref="part0044.xhtml"/>
+    <itemref idref="part0045.xhtml"/>
+    <itemref idref="part0046.xhtml"/>
+    <itemref idref="part0047.xhtml"/>
+    <itemref idref="part0048.xhtml"/>
+    <itemref idref="part0049.xhtml"/>
+    <itemref idref="part0050.xhtml"/>
+    <itemref idref="part0051.xhtml"/>
+    <itemref idref="part0052.xhtml"/>
+    <itemref idref="part0053.xhtml"/>
+    <itemref idref="part0054.xhtml"/>
+    <itemref idref="part0055.xhtml"/>
+    <itemref idref="part0056.xhtml"/>
+    <itemref idref="part0057.xhtml"/>
+    <itemref idref="part0058.xhtml"/>
+    <itemref idref="part0059.xhtml"/>
+    <itemref idref="part0060.xhtml"/>
+    <itemref idref="part0061.xhtml"/>
+    <itemref idref="part0062.xhtml"/>
+    <itemref idref="part0063.xhtml"/>
+    <itemref idref="part0064.xhtml"/>
+    <itemref idref="part0065.xhtml"/>
+    <itemref idref="part0066.xhtml"/>
+    <itemref idref="part0067.xhtml"/>
+    <itemref idref="part0068.xhtml"/>
+    <itemref idref="part0069.xhtml"/>
+    <itemref idref="part0070.xhtml"/>
+    <itemref idref="part0071.xhtml"/>
+    <itemref idref="part0072.xhtml"/>
+    <itemref idref="part0073.xhtml"/>
+    <itemref idref="part0074.xhtml"/>
+    <itemref idref="part0075.xhtml"/>
+    <itemref idref="part0076.xhtml"/>
+    <itemref idref="part0077.xhtml"/>
+  </spine>
+  <guide>
+    <reference type="cover" title="Cover" href="part0000.xhtml"/>
+    <reference type="toc" title="Contents" href="part0004.xhtml"/>
+    <reference type="text" title="Beginning" href="part0005.xhtml"/>
+  </guide>
+</package>

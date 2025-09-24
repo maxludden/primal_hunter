@@ -1,0 +1,389 @@
+/* ==========================================================================
+   EPUB 3 Reflowable CSS for Apple Books
+   Author: Your Name
+   Purpose: Clean, robust typography with Apple Books quirks handled.
+   Notes:
+   - Uses relative units so user font-size controls work.
+   - Avoids hard page control; scene breaks use visual separators.
+   - Dark mode: supports both prefers-color-scheme and Apple Books' dark theme.
+   ========================================================================== */
+
+/* ------------------------------ Root & Variables ------------------------------ */
+:root {
+  --text: #1b1b1b;
+  --bg: #ffffff;
+  --muted: #555555;
+  --link: #0b57d0;
+  --link-visited: #6b3fa0;
+  --rule: #dddddd;
+  --accent: #d14;
+  /* small accents (e.g., hr flourish) */
+  --mono-bg: #f5f5f7;
+  --mono-border: #e2e2e6;
+  --mono-text: #1a1a1a;
+
+  --serif: -apple-system-ui-serif, ui-serif, "Iowan Old Style",
+    "Palatino Linotype", Palatino, "Book Antiqua", Georgia, "Times New Roman",
+    Times, serif;
+  --sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue",
+    Arial, ui-sans-serif, system-ui, sans-serif;
+  --mono: ui-monospace, "SF Mono", "Menlo", Consolas, "Liberation Mono",
+    monospace;
+
+  --base: 1rem;
+  --lh: 1.55;
+  --measure: 70ch;
+  /* max line length */
+}
+
+/* Allow Apple Books’ “use custom text color in dark themes” when applied.
+   Add this class to <body> to prevent forced recoloring in Apple Books dark themes. */
+.ibooks-dark-theme-use-custom-text-color,
+html,
+body {
+  color: var(--text);
+  background: var(--bg);
+}
+
+/* ------------------------------ Global Resets ------------------------------ */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--serif);
+  font-size: var(--base);
+  line-height: var(--lh);
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  max-width: var(--measure);
+  margin: 0 auto;
+}
+
+/* Let the reading system control justification unless you truly need it */
+p {
+  margin: 0 0 0.9em 0;
+  widows: 2;
+  orphans: 2;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--serif);
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 1.6em 0 0.6em;
+  page-break-after: avoid;
+  /* legacy alias */
+  break-after: avoid-page;
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+h4 {
+  font-size: 1.15rem;
+}
+
+h5 {
+  font-size: 1.05rem;
+}
+
+h6 {
+  font-size: 1rem;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+/* ------------------------------ Links ------------------------------ */
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: var(--link-visited);
+}
+
+/* ------------------------------ Images & Figures ------------------------------ */
+img,
+svg {
+  max-width: 100%;
+  height: auto;
+}
+
+figure {
+  margin: 1.2em 0;
+  text-align: center;
+}
+
+figcaption {
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-top: 0.6em;
+}
+
+/* ------------------------------ Quotations ------------------------------ */
+blockquote {
+  margin: 1.2em 0;
+  padding: 0.2em 1em;
+  border-left: 0.2em solid var(--rule);
+  color: var(--muted);
+}
+
+/* ------------------------------ Lists ------------------------------ */
+ul,
+ol {
+  margin: 0.9em 0 0.9em 1.4em;
+}
+
+li {
+  margin: 0.25em 0;
+}
+
+/* ------------------------------ Rules & Scene Breaks ------------------------------ */
+hr {
+  border: 0;
+  height: 1px;
+  background: var(--rule);
+  margin: 2.2em auto;
+  width: 60%;
+}
+
+.scene-break {
+  text-align: center;
+  margin: 2em 0;
+}
+
+.scene-break::before {
+  content: "⁂";
+  letter-spacing: 0.25em;
+  color: var(--accent);
+}
+
+/* ------------------------------ Code, Pre, Inline Code ------------------------------ */
+code,
+kbd,
+samp {
+  font-family: var(--mono);
+  font-size: 0.92rem;
+}
+
+pre {
+  font-family: var(--mono);
+  font-size: 0.92rem;
+  line-height: 1.4;
+  background: var(--mono-bg);
+  border: 1px solid var(--mono-border);
+  color: var(--mono-text);
+  padding: 0.8em 1em;
+  border-radius: 6px;
+  overflow-x: auto;
+  margin: 1em 0;
+}
+
+/* ------------------------------ Tables ------------------------------ */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1em 0;
+}
+
+th,
+td {
+  border: 1px solid var(--rule);
+  padding: 0.5em 0.6em;
+  vertical-align: top;
+}
+
+th {
+  background: #fafafa;
+  font-weight: 700;
+}
+
+/* ------------------------------ Footnotes / Endnotes ------------------------------ */
+sup.footnote-ref {
+  font-size: 0.75em;
+  line-height: 1;
+}
+
+.footnotes,
+.endnotes {
+  font-size: 0.95rem;
+  border-top: 1px solid var(--rule);
+  margin-top: 2em;
+  padding-top: 1em;
+}
+
+.footnotes ol,
+.endnotes ol {
+  margin-left: 1.2em;
+}
+
+/* ------------------------------ Chapter Openers & Drop Caps ------------------------------ */
+/* Apply .chapter-opener to the first paragraph of a chapter */
+.chapter-opener {
+  text-indent: 0;
+}
+
+/* Modern method: initial-letter (Safari/WebKit supports -webkit-initial-letter) */
+@supports (initial-letter: 3) or (-webkit-initial-letter: 3) {
+  .chapter-opener::first-letter {
+    /* Keep ::first-letter to constrain selection; set initial-letter for sizing */
+    initial-letter: 3 2;
+    -webkit-initial-letter: 3 2;
+    font-weight: 700;
+    font-family: var(--serif);
+    margin-right: 0.06em;
+  }
+}
+
+/* Fallback: classic oversized ::first-letter drop cap */
+@supports not ((initial-letter: 3) or (-webkit-initial-letter: 3)) {
+  .chapter-opener::first-letter {
+    float: left;
+    font-size: 3.6rem;
+    /* ~3 lines at line-height 1.2-1.3 */
+    line-height: 0.9;
+    font-weight: 700;
+    margin: 0.12em 0.15em 0 0;
+  }
+}
+
+/* Optional small caps for the first few words after drop cap */
+.smallcaps-after-dropcap {
+  font-variant-caps: small-caps;
+  letter-spacing: 0.03em;
+}
+
+/* ------------------------------ Poetry / Verse ------------------------------ */
+.verse {
+  margin: 1em 0 1.2em;
+  font-family: var(--serif);
+  white-space: pre-wrap;
+}
+
+.verse .line {
+  display: block;
+}
+
+/* ------------------------------ Captions, Asides, Callouts ------------------------------ */
+.caption,
+.aside {
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+/* ------------------------------ Accessibility niceties ------------------------------ */
+abbr[title] {
+  text-decoration: underline dotted;
+}
+
+mark {
+  background: #fff699;
+}
+
+/* ------------------------------ Avoid hard pagination control ------------------------------ */
+/* If you truly need a forced break between major parts, use break-after;
+   also include WebKit column legacy aliases as a fallback. */
+.part-break {
+  page-break-after: always;
+  break-after: page;
+}
+
+@supports not ((break-after: page) and (page-break-after: always)) {
+  .part-break {
+    -webkit-column-break-after: always;
+  }
+}
+
+/* ------------------------------ Images that need a white backdrop in dark themes ------------------------------ */
+.white-bg {
+  background: #fff;
+  padding: 0.2em;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+}
+
+/* ------------------------------ Dark Mode ------------------------------ */
+/* System dark mode (Books generally honors WebKit here). */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #eaeaea;
+    --bg: #0f0f10;
+    --muted: #b3b3b3;
+    --link: #8ab4ff;
+    --link-visited: #c58af9;
+    --rule: #2a2a2d;
+    --mono-bg: #141417;
+    --mono-border: #2a2a2d;
+    --mono-text: #f0f0f0;
+    --accent: #ff92ad;
+  }
+
+  th {
+    background: #151517;
+  }
+
+  hr {
+    opacity: 0.8;
+  }
+}
+
+/* Apple Books specific: If the user selects Apple Books’ dark theme (not just system),
+   add class="ibooks-dark-theme-use-custom-text-color" to <body> so these colors stick. */
+.ibooks-dark-theme-use-custom-text-color.prefers-dark,
+.ibooks-dark-theme-use-custom-text-color .force-dark {
+  color: var(--text);
+  background: var(--bg);
+}
+
+/* ------------------------------ Sepia (optional helper) ------------------------------ */
+/* You can toggle a sepia body class at build time if desired. */
+.sepia {
+  --bg: #fbf2e0;
+  --text: #3a2f22;
+  --rule: #e2d2b8;
+}
+
+/* ------------------------------ Print fallback (rarely used for ePub) ------------------------------ */
+@media print {
+  body {
+    color: #000;
+    background: #fff;
+  }
+
+  a {
+    color: #000;
+    text-decoration: underline;
+  }
+
+  .part-break {
+    break-after: page;
+  }
+}

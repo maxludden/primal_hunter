@@ -1,0 +1,9 @@
+{
+    "1": {
+        "xhtml_dir": "OEBPS/Text",
+        "stylesheets": [
+            "static/epub/The Primal Hunter - 1/page_styles.css",
+            "static/epub/The Primal Hunter - 1/stylesheet.css"
+        ]
+    }
+}

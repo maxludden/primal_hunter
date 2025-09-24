@@ -1,0 +1,140 @@
+@charset "UTF-8";
+@font-face {font-family: 'Cormorant SC'; font-weight: 600; src: url(font_rsrc68D.ttf)}
+@font-face {font-family: Cormorant; src: url(font_rsrc68E.ttf)}
+.caption_s62Y {clear: both; line-height: 1.04727; margin-top: 1.71875em; width: 100%}
+.caption_s63J {-webkit-hyphens: manual; font-size: 0.75em; font-style: italic; hyphens: manual; line-height: 1.01847; margin-bottom: 0; margin-left: auto; margin-right: auto; margin-top: 1.17823em; width: 70%}
+.caption_s63M {clear: both; line-height: 1.04727; page-break-inside: avoid; width: 100%}
+.caption_s64Z {clear: both; line-height: 1.04727; margin-bottom: 1.71875em; margin-top: 1.71875em; width: 100%}
+.class-0 {font-family: Palatino,serif; text-align: justify; text-indent: 1.5em}
+.class-1 {font-family: Palatino,serif; text-align: justify}
+.class-2 {font-family: Palatino,serif}
+.class-3 {font-family: Palatino,serif; text-align: center}
+.class-4 {-webkit-hyphens: manual; font-family: Palatino,serif; hyphens: manual; text-align: left; text-indent: 0.05em}
+.class-5 {-webkit-hyphens: manual; font-family: Palatino,serif; hyphens: manual; text-align: center}
+.class-6 {-webkit-hyphens: manual; font-family: Palatino,serif; hyphens: manual}
+.class-7 {-webkit-hyphens: auto; font-family: Palatino,serif; hyphens: auto; text-align: justify; text-indent: 1.5em}
+.class_s1HC-0 {-webkit-hyphens: auto; clear: both; font-size: 0.95em; hyphens: auto; margin-bottom: 0; margin-left: 4.688%; margin-right: 4.688%; margin-top: 1.46622em; text-indent: 0}
+.class_s1HC-1 {-webkit-hyphens: auto; clear: both; font-size: 0.95em; hyphens: auto; margin-bottom: 0; margin-left: 4.688%; margin-right: 4.688%; margin-top: 1.46622em}
+.class_s1K {font-family: 'Cormorant SC',serif; font-weight: 600; letter-spacing: 0.05em; line-height: 1.04727; margin-left: 6%; margin-right: 6%; padding-top: 2.29166em}
+.class_s1N {clear: both; font-size: 0.9em; line-height: 1.21222; margin-bottom: 0; margin-top: 2.19983em}
+.class_s1R {font-size: 0.9em; line-height: 1.21222; margin-bottom: 0; margin-top: 0.49496em}
+.class_s1S7-0 {-webkit-hyphens: manual; font-style: italic; font-weight: 800; hyphens: manual; margin-bottom: 1.4em; margin-top: 0.84em; text-align: center; text-indent: 0}
+.class_s1S7-1 {-webkit-hyphens: manual; font-style: italic; font-weight: 800; hyphens: manual; margin-bottom: 1.4em; margin-top: 0.84em; text-align: center}
+.class_s1SB-0 {-webkit-hyphens: manual; font-style: italic; font-weight: 800; hyphens: manual; margin-bottom: 0; margin-top: 0.84em; text-align: center; text-indent: 0}
+.class_s1SB-1 {-webkit-hyphens: manual; font-style: italic; font-weight: 800; hyphens: manual; margin-bottom: 0; margin-top: 0.84em; text-align: center}
+.class_s1VU {-webkit-hyphens: auto; font-weight: 800; hyphens: auto; margin-bottom: 0; margin-top: 0}
+.class_s1X {font-size: 0.9em; line-height: 1.21222; margin-bottom: 1.53988em; margin-top: 0.49496em}
+.class_s2A-0 {font-size: 0.9em; line-height: 1.03069; margin-bottom: 0.114583em; margin-left: 5.208%; margin-top: 0; page-break-inside: avoid}
+.class_s2A-1 {color: #242774; font-size: 0.9em; line-height: 1.03069; margin-bottom: 0.114583em; margin-left: 5.208%; margin-top: 0; page-break-inside: avoid}
+.class_s2KC {-webkit-hyphens: auto; font-size: 0.95em; font-weight: 800; hyphens: auto; margin-bottom: 0; margin-left: 4.688%; margin-right: 4.688%; margin-top: 0; text-indent: 4.453%}
+.class_s3BD {-webkit-hyphens: auto; font-weight: 800; hyphens: auto; margin-bottom: 0; margin-left: 4.688%; margin-right: 4.688%; margin-top: 0; text-align: left; text-indent: 0}
+.class_s3BH {-webkit-hyphens: auto; font-weight: 800; hyphens: auto; margin-bottom: 1.4em; margin-left: 4.688%; margin-right: 4.688%; margin-top: 0; text-align: left; text-indent: 0}
+.class_s3PA {-webkit-hyphens: auto; clear: both; font-size: 0.95em; hyphens: auto; margin-bottom: 1.46622em; margin-left: 4.688%; margin-right: 4.688%; margin-top: 1.46622em; text-align: justify}
+.class_s4YC {-webkit-hyphens: auto; font-style: italic; font-weight: 800; hyphens: auto; margin-bottom: 0; margin-top: 0}
+.class_s5EY {-webkit-hyphens: manual; clear: both; hyphens: manual; margin-bottom: 1.4em; margin-top: 1.4em; text-align: center; text-indent: 0}
+.class_s5K4 {-webkit-hyphens: manual; clear: both; hyphens: manual; margin-bottom: 0; margin-top: 1.4em; text-align: center; text-indent: 0}
+.class_s5NE-0 {clear: both; line-height: 1.04727; margin-left: auto; margin-right: auto; margin-top: 1.60417em; max-width: 100%; page-break-inside: avoid; width: 11.2em}
+.class_s5NE-1 {clear: both; line-height: 1.04727; margin-left: auto; margin-right: auto; margin-top: 1.60417em; max-width: 100%; page-break-inside: avoid; text-align: center; width: 11.2em}
+.class_s5NE-2 {clear: both; line-height: 1.04727; margin-left: auto; margin-right: auto; margin-top: 1.60417em; max-width: 100%; page-break-inside: avoid; text-align: center; text-indent: 0; width: 11.2em}
+.class_s6V {color: #242774; font-size: 0.9em; line-height: 1.03069; margin-bottom: 0; margin-left: 5.208%; margin-top: 0; page-break-inside: avoid}
+.class_s6X {line-height: 1.04727; margin-bottom: 0.114583em; padding-left: 5%; padding-right: 5%; text-align: left; text-indent: -5.209%}
+.class_s7A-0 {float: left; font-family: Cormorant,CCL; font-size: 3em; line-height: 100%; margin-right: 0.1em}
+.class_s7A-1 {-webkit-hyphens: auto; hyphens: auto; margin-bottom: 0; margin-top: 0; text-indent: 0}
+.class_s7A-2 {margin-bottom: 0; margin-top: 0; text-indent: 0}
+.class_s7A-3 {-webkit-hyphens: auto; hyphens: auto; margin-bottom: 0; margin-top: 0}
+.class_s7A-4 {-webkit-hyphens: auto; hyphens: auto; margin-bottom: 0; margin-top: 0; text-align: justify}
+.class_s7C-0 {-webkit-hyphens: auto; hyphens: auto; margin-bottom: 0; margin-top: 0}
+.class_s7C-1 {-webkit-hyphens: auto; hyphens: auto; margin-bottom: 0; margin-top: 0; text-indent: 1.5em}
+.class_s7C-2 {-webkit-hyphens: auto; hyphens: auto; margin-bottom: 0; margin-top: 0; text-align: justify; text-indent: 1.5em}
+.class_s7C-3 {margin-bottom: 0; margin-top: 0}
+.class_s8 {font-family: Palatino,serif}
+.class_s8D {margin-bottom: 0; margin-top: 0}
+.class_s8F-0 {margin-bottom: 0.286458em}
+.class_s8F-1 {border-bottom-style: solid; border-bottom-width: 1px; display: inline-block; font-size: 1.2em; padding-bottom: 0.401041em; padding-left: 2.131%; padding-right: 2.131%}
+.class_s8H {min-height: 2.25em}
+.class_s8P {font-family: 'Cormorant SC',serif; font-weight: 600; letter-spacing: 0.05em; line-height: 1.04727; margin-bottom: 0.48125em; margin-left: 6%; margin-right: 6%; min-height: 12em; padding-top: 3.43922em; text-align: center}
+.class_s8S {-webkit-hyphens: manual; clear: both; font-weight: 800; hyphens: manual; margin-bottom: 0; margin-top: 2em; text-align: center}
+.class_s8U-0 {-webkit-hyphens: manual; clear: both; font-weight: 800; hyphens: manual; margin-bottom: 0; margin-top: 1.4em; text-align: center}
+.class_s8U-1 {-webkit-hyphens: manual; clear: both; font-weight: 800; hyphens: manual; margin-bottom: 0; margin-top: 1.4em; text-align: center; text-indent: 0}
+.class_s8U-2 {-webkit-hyphens: manual; clear: both; font-weight: 800; hyphens: manual; margin-bottom: 0; margin-top: 1.4em}
+.class_s8W-0 {-webkit-hyphens: auto; clear: both; font-size: 0.95em; font-weight: 800; hyphens: auto; margin-bottom: 1.46622em; margin-left: 4.688%; margin-right: 4.688%; margin-top: 1.46622em; text-align: justify}
+.class_s8W-1 {-webkit-hyphens: auto; clear: both; font-size: 0.95em; font-weight: 800; hyphens: auto; margin-bottom: 1.46622em; margin-left: 4.688%; margin-right: 4.688%; margin-top: 1.46622em; text-indent: 0}
+.class_s8W-2 {-webkit-hyphens: auto; clear: both; font-size: 0.95em; font-weight: 800; hyphens: auto; margin-bottom: 1.46622em; margin-left: 4.688%; margin-right: 4.688%; margin-top: 1.46622em}
+.class_s8Y-0 {float: left; font-family: Cormorant,CCL; font-size: 2em; line-height: 100%; margin-right: 0.1em}
+.class_s8Y-1 {-webkit-hyphens: auto; hyphens: auto; margin-bottom: 0; margin-top: 0; text-indent: 0}
+.class_s8Y-2 {-webkit-hyphens: auto; hyphens: auto; margin-bottom: 0; margin-top: 0}
+.class_s8Y-3 {-webkit-hyphens: auto; hyphens: auto; margin-bottom: 0; margin-top: 0; text-align: justify}
+.class_s9N {vertical-align: top; width: 100%}
+.class_s9R {margin-left: auto; margin-right: auto; width: 28.1%}
+.class_s9V-0 {clear: both; line-height: 1.04727; margin-bottom: 1.60417em; margin-left: auto; margin-right: auto; margin-top: 1.60417em; max-width: 100%; page-break-inside: avoid; text-align: center; text-indent: 0; width: 11.2em}
+.class_s9V-1 {clear: both; line-height: 1.04727; margin-bottom: 1.60417em; margin-left: auto; margin-right: auto; margin-top: 1.60417em; max-width: 100%; page-break-inside: avoid; text-align: center; width: 11.2em}
+.class_s9V-2 {clear: both; line-height: 1.04727; margin-bottom: 1.60417em; margin-left: auto; margin-right: auto; margin-top: 1.60417em; max-width: 100%; page-break-inside: avoid; width: 11.2em}
+.class_s9X-0 {-webkit-hyphens: auto; hyphens: auto; margin-bottom: 0; margin-top: 0; text-indent: 0}
+.class_s9X-1 {-webkit-hyphens: auto; hyphens: auto; margin-bottom: 0; margin-top: 0}
+.class_s9X-2 {-webkit-hyphens: auto; hyphens: auto; margin-bottom: 0; margin-top: 0; text-align: justify}
+.class_s10-0 {font-size: 0.9em; line-height: 1.21222; margin-bottom: 0; margin-top: 0.742441em}
+.class_s10-1 {font-size: 0.9em; font-style: italic; line-height: 1.21222; margin-bottom: 0; margin-top: 0.742441em}
+.class_s13 {clear: both; font-size: 0.9em; line-height: 1.21222; margin-bottom: 0; margin-top: 1.53988em}
+.class_s15 {font-size: 0.9em; line-height: 1.21222; margin-bottom: 0; margin-top: 0}
+.class_s26 {font-family: 'Cormorant SC',serif; font-weight: 600; letter-spacing: 0.05em; line-height: 1.04727; margin-bottom: 2.29166em; margin-left: 6%; margin-right: 6%; padding-top: 2.29166em; text-align: center}
+.class_s62B {-webkit-hyphens: manual; hyphens: manual; margin-bottom: 0; margin-top: 0}
+.class_s62U {width: 100%}
+.class_s62W {margin-left: 25%; margin-right: 25%; width: 50%}
+.class_s63P {-webkit-hyphens: manual; clear: both; hyphens: manual; margin-bottom: 0; margin-top: 1.5em}
+.class_s67K {font-style: italic; font-weight: 800}
+.class_s67M {font-style: italic}
+.class_s67N {font-weight: 800}
+.class_s67R {font-size: 0.8em; line-height: 1.28814; padding-right: 0.3em}
+.class_s67S-0 {color: #242774; text-decoration: underline}
+.class_s67S-1 {text-decoration: underline}
+.class_s67X {letter-spacing: 0.1875em}
+.class_s67Y {font-size: 0.75em; line-height: 1.61629; vertical-align: super}
+.class_s67Z {color: #242774; text-decoration: underline}
+.class_s76 {margin-bottom: 0.48125em; padding-top: 3.43922em}
+.class_s78-0 {font-family: 'Cormorant SC',serif; font-weight: 600; letter-spacing: 0.05em; line-height: 1.04727; margin-bottom: 2.29166em; margin-left: 6%; margin-right: 6%; min-height: 12em; text-align: center; text-indent: 0}
+.class_s78-1 {font-family: 'Cormorant SC',serif; font-weight: 600; letter-spacing: 0.05em; line-height: 1.04727; margin-bottom: 2.29166em; margin-left: 6%; margin-right: 6%; min-height: 12em; text-align: center}
+.class_s78-2 {-webkit-hyphens: manual; font-family: 'Cormorant SC',serif; font-weight: 600; hyphens: manual; letter-spacing: 0.05em; line-height: 1.04727; margin-bottom: 2.29166em; margin-left: 6%; margin-right: 6%; min-height: 12em; text-align: center; text-indent: 0}
+.class_s78-3 {-webkit-hyphens: manual; font-family: 'Cormorant SC',serif; font-weight: 600; hyphens: manual; letter-spacing: 0.05em; line-height: 1.04727; margin-bottom: 2.29166em; margin-left: 6%; margin-right: 6%; min-height: 12em}
+.class_s345 {-webkit-hyphens: auto; font-size: 0.95em; font-style: italic; font-weight: 800; hyphens: auto; margin-bottom: 0; margin-left: 4.688%; margin-right: 4.688%; margin-top: 0; text-indent: 4.453%}
+.class_s630 {-webkit-hyphens: manual; clear: both; hyphens: manual; margin-bottom: 1.4em; margin-top: 1.5em}
+.class_s640 {clear: both; line-height: 1.04727; margin-bottom: 1.60417em; margin-left: auto; margin-right: auto; margin-top: 1.71875em; max-width: 100%; page-break-inside: avoid; width: 11.2em}
+.class_s651 {-webkit-hyphens: manual; clear: both; font-weight: 800; hyphens: manual; margin-bottom: 1.4em; margin-top: 2.225em}
+.class_s681 {-webkit-hyphens: none; color: #242774; hyphens: none; text-decoration: underline}
+.class_s683 {font-size: 0.75em; line-height: 1.61629; vertical-align: super}
+.class_sA4-0 {-webkit-hyphens: auto; clear: both; font-weight: 800; hyphens: auto; margin-bottom: 0; margin-left: 4.688%; margin-right: 4.688%; margin-top: 1.4em; text-align: left}
+.class_sA4-1 {-webkit-hyphens: auto; clear: both; font-weight: 800; hyphens: auto; margin-bottom: 0; margin-left: 4.688%; margin-right: 4.688%; margin-top: 1.4em; text-align: left; text-indent: 0}
+.class_sA6 {-webkit-hyphens: auto; hyphens: auto; margin-bottom: 0; margin-left: 4.688%; margin-right: 4.688%; margin-top: 0; text-align: left}
+.class_sAE {-webkit-hyphens: auto; font-weight: 800; hyphens: auto; margin-bottom: 0; margin-left: 4.688%; margin-right: 4.688%; margin-top: 0.84em; text-align: left}
+.class_sAU {-webkit-hyphens: auto; clear: both; hyphens: auto; margin-bottom: 0; margin-left: 4.688%; margin-right: 4.688%; margin-top: 1.4em; text-align: left}
+.class_sB0 {-webkit-hyphens: auto; clear: both; hyphens: auto; margin-bottom: 1.4em; margin-left: 4.688%; margin-right: 4.688%; margin-top: 1.4em; text-align: left}
+.class_sBB-0 {-webkit-hyphens: manual; clear: both; font-weight: 800; hyphens: manual; margin-bottom: 1.4em; margin-top: 1.4em; text-align: center; text-indent: 0}
+.class_sBB-1 {-webkit-hyphens: manual; clear: both; font-weight: 800; hyphens: manual; margin-bottom: 1.4em; margin-top: 1.4em; text-align: center}
+.class_sFR-0 {-webkit-hyphens: auto; clear: both; font-size: 0.95em; font-weight: 800; hyphens: auto; margin-bottom: 0; margin-left: 4.688%; margin-right: 4.688%; margin-top: 1.46622em; text-indent: 0}
+.class_sFR-1 {-webkit-hyphens: auto; clear: both; font-size: 0.95em; font-weight: 800; hyphens: auto; margin-bottom: 0; margin-left: 4.688%; margin-right: 4.688%; margin-top: 1.46622em}
+.class_sFR-2 {-webkit-hyphens: auto; clear: both; font-size: 0.95em; font-weight: 800; hyphens: auto; margin-bottom: 0; margin-left: 4.688%; margin-right: 4.688%; margin-top: 1.46622em; text-align: justify}
+.class_sH {vertical-align: middle; width: 100%}
+.class_sJM-0 {-webkit-hyphens: manual; clear: both; font-style: italic; font-weight: 800; hyphens: manual; margin-bottom: 1.4em; margin-top: 1.4em; text-align: center; text-indent: 0}
+.class_sJM-1 {-webkit-hyphens: manual; clear: both; font-style: italic; font-weight: 800; hyphens: manual; margin-bottom: 1.4em; margin-top: 1.4em; text-align: center}
+.class_sK {line-height: 1.04727; width: 100%}
+.class_sKJ-0 {-webkit-hyphens: auto; font-style: italic; hyphens: auto; margin-bottom: 0; margin-top: 0}
+.class_sKJ-1 {-webkit-hyphens: auto; font-style: italic; hyphens: auto; margin-bottom: 0; margin-top: 0; text-align: justify; text-indent: 1.5em}
+.class_sKJ-2 {-webkit-hyphens: auto; font-style: italic; hyphens: auto; margin-bottom: 0; margin-top: 0; text-indent: 1.5em}
+.class_sNN-0 {-webkit-hyphens: auto; hyphens: auto; margin-bottom: 0; margin-top: 0; text-indent: 0}
+.class_sNN-1 {float: left; font-family: Cormorant,CCL; font-size: 2em; line-height: 100%; margin-right: 0.1em}
+.class_sU {clear: both; font-size: 0.9em; font-weight: 800; line-height: 1.21222; margin-bottom: 0; margin-top: 2.74978em; text-align: center; text-indent: 0}
+.class_sUG-0 {-webkit-hyphens: auto; clear: both; font-size: 0.95em; font-style: italic; font-weight: 800; hyphens: auto; margin-bottom: 0; margin-left: 4.688%; margin-right: 4.688%; margin-top: 1.46622em; text-indent: 0}
+.class_sUG-1 {-webkit-hyphens: auto; clear: both; font-size: 0.95em; font-style: italic; font-weight: 800; hyphens: auto; margin-bottom: 0; margin-left: 4.688%; margin-right: 4.688%; margin-top: 1.46622em}
+.class_sUJ-0 {-webkit-hyphens: manual; clear: both; font-style: italic; font-weight: 800; hyphens: manual; margin-bottom: 0; margin-top: 1.4em; text-align: center; text-indent: 0}
+.class_sUJ-1 {-webkit-hyphens: manual; clear: both; font-style: italic; font-weight: 800; hyphens: manual; margin-bottom: 0; margin-top: 1.4em; text-align: center}
+.class_sUM-0 {-webkit-hyphens: auto; clear: both; font-size: 0.95em; font-style: italic; font-weight: 800; hyphens: auto; margin-bottom: 1.46622em; margin-left: 4.688%; margin-right: 4.688%; margin-top: 1.46622em; text-indent: 0}
+.class_sUM-1 {-webkit-hyphens: auto; clear: both; font-size: 0.95em; font-style: italic; font-weight: 800; hyphens: auto; margin-bottom: 1.46622em; margin-left: 4.688%; margin-right: 4.688%; margin-top: 1.46622em}
+.class_sVE-0 {-webkit-hyphens: manual; font-weight: 800; hyphens: manual; margin-bottom: 0; margin-top: 0.84em; text-align: center; text-indent: 0}
+.class_sVE-1 {-webkit-hyphens: manual; font-weight: 800; hyphens: manual; margin-bottom: 0; margin-top: 0.84em; text-align: center}
+.class_sVG-0 {-webkit-hyphens: manual; font-weight: 800; hyphens: manual; margin-bottom: 1.4em; margin-top: 0.84em; text-align: center; text-indent: 0}
+.class_sVG-1 {-webkit-hyphens: manual; font-weight: 800; hyphens: manual; margin-bottom: 1.4em; margin-top: 0.84em; text-align: center}
+.class_sW {font-size: 0.9em; font-weight: 800; line-height: 1.21222; margin-bottom: 0; margin-top: 0; text-align: center; text-indent: 0}
+.class_sY {font-size: 0.9em; line-height: 1.21222; margin-bottom: 0; margin-top: 1.53988em}
+.heading_s1H {font-size: 1.26em; line-height: 1.03855; margin-bottom: 0; margin-top: 0; page-break-inside: avoid}
+.heading_s8K {-webkit-hyphens: manual; font-size: 1.4em; hyphens: manual; line-height: 1.01324; margin-bottom: 0; margin-top: 0; page-break-inside: avoid}
+.heading_s24 {font-size: 1.33em; line-height: 1.02545; margin-bottom: 0; margin-top: 0; page-break-inside: avoid}
+.heading_s76 {font-size: 1.4em; line-height: 1.01324; margin-bottom: 0.48125em; margin-top: 1.14203em; padding-top: 3.43922em; page-break-inside: avoid}

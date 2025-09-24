@@ -1,0 +1,22 @@
+@page {
+    margin-bottom: 5pt;
+    margin-top: 5pt
+    }
+@font-face {
+    font-family: "Cormorant SC";
+    font-weight: 500;
+    font-style: normal;
+    src: url(fonts/00001.ttf)
+    }
+@font-face {
+    font-family: "Cormorant SC";
+    font-weight: 600;
+    font-style: normal;
+    src: url(fonts/00002.ttf)
+    }
+@font-face {
+    font-family: Cormorant;
+    font-weight: 400;
+    font-style: normal;
+    src: url(fonts/00003.ttf)
+    }

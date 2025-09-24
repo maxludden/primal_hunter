@@ -1,0 +1,488 @@
+.alignment-block {
+    clear: both;
+    display: block;
+    margin-bottom: 1.4em;
+    margin-top: 1.4em
+    }
+.alignment-block-content {
+    -webkit-hyphenate-limit-after: 4;
+    -webkit-hyphenate-limit-before: 4;
+    -webkit-hyphenate-limit-lines: 2;
+    -webkit-hyphens: auto;
+    adobe-hyphenate: auto;
+    display: block;
+    font-size: 0.875em;
+    hyphens: auto;
+    text-align: center;
+    text-indent: 0;
+    margin: 0
+    }
+.alignment-block-content1 {
+    -webkit-hyphenate-limit-after: 4;
+    -webkit-hyphenate-limit-before: 4;
+    -webkit-hyphenate-limit-lines: 2;
+    -webkit-hyphens: auto;
+    adobe-hyphenate: auto;
+    display: block;
+    font-size: 0.875em;
+    hyphens: auto;
+    text-align: left;
+    text-indent: 0;
+    margin: 0
+    }
+.alignment-block-content2 {
+    -webkit-hyphenate-limit-after: 4;
+    -webkit-hyphenate-limit-before: 4;
+    -webkit-hyphenate-limit-lines: 2;
+    -webkit-hyphens: auto;
+    adobe-hyphenate: auto;
+    display: block;
+    font-size: 0.875em;
+    hyphens: auto;
+    text-align: center;
+    text-indent: 0;
+    margin: 0.5em 0 0
+    }
+.alignment-block-content3 {
+    -webkit-hyphenate-limit-after: 4;
+    -webkit-hyphenate-limit-before: 4;
+    -webkit-hyphenate-limit-lines: 2;
+    -webkit-hyphens: auto;
+    adobe-hyphenate: auto;
+    display: block;
+    hyphens: auto;
+    text-align: center;
+    text-indent: 0;
+    margin: 0
+    }
+.alignment-block-content4 {
+    -webkit-hyphenate-limit-after: 4;
+    -webkit-hyphenate-limit-before: 4;
+    -webkit-hyphenate-limit-lines: 2;
+    -webkit-hyphens: auto;
+    adobe-hyphenate: auto;
+    display: block;
+    hyphens: auto;
+    text-align: left;
+    text-indent: 0;
+    margin: 0
+    }
+.alignment-block1 {
+    clear: both;
+    display: block;
+    margin: 1.4em 1.5em
+    }
+.calibre {
+    display: block;
+    font-family: Palatino, serif;
+    font-size: 1em;
+    font-style: normal;
+    font-weight: normal;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 5pt
+    }
+.calibre1 {
+    font-weight: bold
+    }
+.calibre2 {
+    font-size: 0.85714em;
+    line-height: 1.2;
+    margin-left: 0.05em;
+    vertical-align: super
+    }
+.calibre3 {
+    color: rgb(36, 39, 116)
+    }
+.calibre4 {
+    font-style: italic
+    }
+.calibre5 {
+    font-size: 0.75em;
+    line-height: normal;
+    margin-left: 0.05em;
+    vertical-align: super
+    }
+.calibre6 {
+    color: rgb(36, 39, 116);
+    height: auto;
+    width: 100%
+    }
+.calibre7 {
+    height: auto;
+    width: 100%
+    }
+.content-external-link {
+    -webkit-hyphens: none;
+    adobe-hyphenate: none;
+    color: rgb(36, 39, 116);
+    hyphens: none;
+    overflow-wrap: break-word;
+    text-decoration: underline
+    }
+.content-external-link1 {
+    color: rgb(36, 39, 116);
+    text-decoration: underline
+    }
+.element {
+    display: block
+    }
+.element-number {
+    display: inline-block;
+    font-family: "Cormorant SC", serif;
+    font-size: 1.25em;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    line-height: 1.2;
+    margin-bottom: 0.25em;
+    padding-bottom: 0.35em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    text-align: center;
+    border-bottom: initial solid 1px
+    }
+.element-number-block {
+    display: block;
+    min-height: 2.25em
+    }
+.element-number-term {
+    line-height: 1.2
+    }
+.element-subtitle {
+    display: block;
+    font-family: "Cormorant SC", serif;
+    font-kerning: auto;
+    font-size: 1.125em;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    line-height: 1.2;
+    page-break-inside: avoid;
+    text-align: center;
+    margin: 0 0 0.5em
+    }
+.element-title {
+    display: block;
+    font-family: "Cormorant SC", serif;
+    font-kerning: auto;
+    font-size: 1.42857em;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    line-height: 1.2;
+    page-break-inside: avoid;
+    text-align: center;
+    margin: 0 0 0.3em
+    }
+.element-title1 {
+    display: block;
+    font-family: "Cormorant SC", serif;
+    font-kerning: auto;
+    font-size: 1.57143em;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    line-height: 1.2;
+    page-break-inside: avoid;
+    text-align: center;
+    margin: 0 0 0.3em
+    }
+.element-title2 {
+    display: block;
+    font-family: "Cormorant SC", serif;
+    font-kerning: auto;
+    font-size: 1.375em;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    line-height: 1.2;
+    page-break-inside: avoid;
+    text-align: center;
+    margin: 0 0 0.3em
+    }
+.element1 {
+    display: block;
+    margin-top: 2.5em
+    }
+.first {
+    -webkit-hyphenate-limit-after: 4;
+    -webkit-hyphenate-limit-before: 4;
+    -webkit-hyphenate-limit-lines: 2;
+    -webkit-hyphens: auto;
+    adobe-hyphenate: auto;
+    display: block;
+    font-size: 0.875em;
+    hyphens: auto;
+    text-align: left;
+    text-indent: 0;
+    margin: 0.75em 0 0
+    }
+.first-letter {
+    float: left;
+    font-family: Cormorant, serif;
+    font-size: 300%;
+    font-style: normal;
+    font-weight: normal;
+    margin-right: 0.18em;
+    margin-top: -0.3em;
+    text-decoration: none;
+    text-transform: uppercase
+    }
+.first-letter1 {
+    float: left;
+    font-family: Cormorant, serif;
+    font-size: 1.5em;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.2;
+    margin-right: 0.18em;
+    margin-top: -0.3em;
+    text-decoration: none;
+    text-transform: uppercase
+    }
+.first1 {
+    -webkit-hyphenate-limit-after: 4;
+    -webkit-hyphenate-limit-before: 4;
+    -webkit-hyphenate-limit-lines: 2;
+    -webkit-hyphens: auto;
+    -webkit-line-box-contain: block inline replaced;
+    adobe-hyphenate: auto;
+    display: block;
+    hyphens: auto;
+    text-align: justify;
+    text-indent: 0;
+    margin: 0
+    }
+.first2 {
+    -webkit-hyphenate-limit-after: 4;
+    -webkit-hyphenate-limit-before: 4;
+    -webkit-hyphenate-limit-lines: 2;
+    -webkit-hyphens: auto;
+    adobe-hyphenate: auto;
+    display: block;
+    hyphens: auto;
+    text-align: justify;
+    text-indent: 0;
+    margin: 0
+    }
+.heading {
+    display: block;
+    margin-bottom: 2em;
+    margin-left: 6%;
+    margin-right: 6%;
+    text-align: center
+    }
+.heading-contents {
+    display: block;
+    padding-top: 2em
+    }
+.heading-contents1 {
+    display: block;
+    padding-top: 3.0015em
+    }
+.heading1 {
+    display: block;
+    margin-bottom: 2em;
+    margin-left: 6%;
+    margin-right: 6%;
+    min-height: 12em;
+    text-align: center
+    }
+.image-element-block {
+    display: block;
+    text-align: center
+    }
+.image-element-image {
+    height: auto;
+    vertical-align: middle;
+    width: 100%
+    }
+.image-element-size-container {
+    display: inline-block;
+    width: 100%
+    }
+.implicit-break {
+    -webkit-hyphenate-limit-after: 4;
+    -webkit-hyphenate-limit-before: 4;
+    -webkit-hyphenate-limit-lines: 2;
+    -webkit-hyphens: auto;
+    adobe-hyphenate: auto;
+    clear: both;
+    display: block;
+    height: 1.4em;
+    hyphens: auto;
+    page-break-inside: avoid;
+    text-align: justify;
+    text-indent: 0;
+    margin: 0 0 1.4em
+    }
+.implicit-break1 {
+    -webkit-hyphenate-limit-after: 4;
+    -webkit-hyphenate-limit-before: 4;
+    -webkit-hyphenate-limit-lines: 2;
+    -webkit-hyphens: auto;
+    adobe-hyphenate: auto;
+    display: block;
+    height: 0;
+    hyphens: auto;
+    page-break-inside: avoid;
+    text-align: justify;
+    text-indent: 0;
+    margin: 1.4em 0 0
+    }
+.inline-image {
+    clear: both;
+    display: block;
+    margin-bottom: 1.5em;
+    margin-top: 1.5em;
+    page-break-inside: avoid;
+    text-align: center;
+    width: 100%
+    }
+.inline-image-caption {
+    -webkit-hyphenate-limit-after: 4;
+    -webkit-hyphenate-limit-before: 4;
+    -webkit-hyphenate-limit-lines: 2;
+    -webkit-hyphens: auto;
+    adobe-hyphenate: auto;
+    display: inline-block;
+    font-size: 0.75em;
+    font-style: italic;
+    hyphens: auto;
+    text-align: center;
+    text-indent: 0;
+    width: 70%;
+    margin: 1em 15% 0
+    }
+.inline-image-container {
+    display: block;
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%
+    }
+.inline-image1 {
+    clear: both;
+    display: block;
+    margin-bottom: 1.5em;
+    margin-top: 1.5em;
+    text-align: center;
+    width: 100%
+    }
+.inline-image2 {
+    clear: both;
+    display: block;
+    margin-bottom: 1.5em;
+    page-break-inside: avoid;
+    text-align: center;
+    width: 100%
+    }
+.inline-image3 {
+    clear: both;
+    display: block;
+    margin-top: 1.5em;
+    text-align: center;
+    width: 100%
+    }
+.link-contains-image {
+    color: rgb(36, 39, 116);
+    text-decoration: none
+    }
+.ornamental-break {
+    clear: both;
+    display: block;
+    margin-bottom: 1.4em;
+    margin-top: 1.4em;
+    page-break-inside: avoid;
+    text-align: center
+    }
+.ornamental-break-as-text {
+    -webkit-hyphenate-limit-after: 4;
+    -webkit-hyphenate-limit-before: 4;
+    -webkit-hyphenate-limit-lines: 2;
+    -webkit-hyphens: auto;
+    adobe-hyphenate: auto;
+    display: none;
+    hyphens: auto;
+    text-align: center;
+    text-indent: 0;
+    margin: 0
+    }
+.ornamental-break-block {
+    display: inline-block;
+    width: 11.2em
+    }
+.ornamental-break-image {
+    height: auto;
+    vertical-align: top;
+    width: 100%
+    }
+.ornamental-break-size-container {
+    display: inline-block;
+    width: 28.1%
+    }
+.section-title {
+    display: block;
+    font-family: "Cormorant SC", serif;
+    font-kerning: auto;
+    font-size: 1.125em;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    line-height: 1.2;
+    padding-bottom: 0.7em;
+    padding-top: 0.7em;
+    page-break-inside: avoid;
+    margin: 1.4em 0 0
+    }
+.subsq {
+    -webkit-hyphenate-limit-after: 4;
+    -webkit-hyphenate-limit-before: 4;
+    -webkit-hyphenate-limit-lines: 2;
+    -webkit-hyphens: auto;
+    adobe-hyphenate: auto;
+    display: block;
+    hyphens: auto;
+    text-align: justify;
+    text-indent: 1.5em;
+    margin: 0
+    }
+.title-block {
+    display: block;
+    font-size: 0.875em;
+    padding-top: 0
+    }
+.title-subtitle-block {
+    display: block;
+    padding-top: 0
+    }
+.toc-content {
+    -webkit-hyphenate-limit-after: 4;
+    -webkit-hyphenate-limit-before: 4;
+    -webkit-hyphenate-limit-lines: 2;
+    -webkit-hyphens: auto;
+    adobe-hyphenate: auto;
+    display: block;
+    font-size: 0.875em;
+    hyphens: auto;
+    padding-left: 1.5rem;
+    text-align: left;
+    text-indent: -1.5rem;
+    margin: 0
+    }
+.toc-contents {
+    display: block;
+    padding-left: 5%;
+    padding-right: 5%
+    }
+.toc-item {
+    display: block;
+    margin-bottom: 0.1em;
+    page-break-inside: avoid
+    }
+.toc-item-number {
+    font-size: 0.85714em;
+    padding-left: 0;
+    padding-right: 0.3em;
+    text-indent: 0
+    }

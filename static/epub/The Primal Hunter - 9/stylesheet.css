@@ -1,0 +1,831 @@
+.calibre {
+  display: block;
+}
+.caption_s2b {
+  display: block;
+  font-size: 0.75em;
+  font-style: italic;
+  width: 70%;
+  margin: 1em auto 0;
+}
+.caption_s2b1 {
+  display: block;
+  font-size: 0.75em;
+  font-style: italic;
+  font-weight: 800;
+  width: 70%;
+  margin: 1em auto 0;
+}
+.caption_s2d {
+  clear: both;
+  display: block;
+  margin-top: 1.5em;
+  page-break-inside: avoid;
+  width: 100%;
+}
+.caption_s6tg {
+  clear: both;
+  color: #242774;
+  display: block;
+  margin-top: 1.5em;
+  width: 100%;
+}
+.caption_s6tg1 {
+  clear: both;
+  display: block;
+  margin-top: 1.5em;
+  width: 100%;
+}
+.caption_s6tx {
+  clear: both;
+  display: block;
+  page-break-inside: avoid;
+  width: 100%;
+}
+.class {
+  display: block;
+  font-family: Palatino, serif;
+  font-size: 1em;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+  margin: 0 5pt;
+}
+.class_s {
+  display: block;
+  font-size: 0.83333em;
+  margin: 0.75em 0 0;
+}
+.class_s1 {
+  clear: both;
+  display: block;
+  font-size: 0.83333em;
+  margin: 1.55556em 0 0;
+}
+.class_s1a {
+  display: block;
+  font-family: Cormorant SC, serif;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.42em;
+  margin-left: 6%;
+  margin-right: 6%;
+  min-height: 12em;
+  padding-top: 3.0015em;
+  text-align: center;
+}
+.class_s1a1 {
+  clear: both;
+  display: block;
+  font-weight: 800;
+  text-align: center;
+  margin: 2em 0 1.4em;
+}
+.class_s1be {
+  display: block;
+  font-weight: 800;
+  text-align: center;
+  margin: 0.84em 0 0;
+}
+.class_s1e {
+  display: block;
+  font-style: italic;
+  font-weight: 800;
+  text-align: center;
+  margin: 0.84em 0 0;
+}
+.class_s1k {
+  display: block;
+  font-family: Cormorant SC, serif;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  margin-left: 6%;
+  margin-right: 6%;
+  padding-top: 2em;
+}
+.class_s1n {
+  clear: both;
+  display: block;
+  font-size: 0.83333em;
+  margin: 2.22222em 0 0;
+}
+.class_s1n1 {
+  clear: both;
+  display: block;
+  text-align: left;
+  margin: 1.4em 4.688%;
+}
+.class_s1r {
+  color: #242774;
+  display: block;
+  font-size: 0.83333em;
+  margin: 0.5em 0 0;
+}
+.class_s2 {
+  display: block;
+  font-size: 0.83333em;
+  margin: 0;
+}
+.class_s2p {
+  display: block;
+  font-family: Cormorant SC, serif;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  margin-bottom: 2em;
+  margin-left: 6%;
+  margin-right: 6%;
+  padding-top: 2em;
+  text-align: center;
+}
+.class_s2u {
+  color: #242774;
+  display: block;
+  font-size: 0.83333em;
+  page-break-inside: avoid;
+  margin: 0 0 0.75em 5.208%;
+}
+.class_s2x {
+  display: block;
+  font-size: 0.83333em;
+  page-break-inside: avoid;
+  margin: 0 0 0.1em 5.208%;
+}
+.class_s3 {
+  display: block;
+  font-size: 0.83333em;
+  font-style: italic;
+  margin: 0.75em 0 0;
+}
+.class_s3ap {
+  float: left;
+  font-family: Cormorant, CCL;
+  font-size: 2em;
+  line-height: 100%;
+  margin-right: 0.1em;
+}
+.class_s3bd {
+  display: block;
+  font-style: italic;
+  text-indent: 0;
+  margin: 0;
+}
+.class_s4 {
+  color: #242774;
+  display: block;
+  margin-left: 25%;
+  margin-right: 25%;
+  width: 50%;
+}
+.class_s5 {
+  height: auto;
+  width: 100%;
+}
+.class_s6 {
+  display: block;
+  font-family: Cormorant SC, serif;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  margin-bottom: 2em;
+  margin-left: 6%;
+  margin-right: 6%;
+  min-height: 12em;
+  text-align: center;
+  text-indent: 0;
+}
+.class_s6rn {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.4em;
+  max-width: 100%;
+  page-break-inside: avoid;
+  text-align: center;
+  width: 11.2em;
+}
+.class_s6rn1 {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.4em;
+  max-width: 100%;
+  page-break-inside: avoid;
+  width: 11.2em;
+}
+.class_s6su {
+  clear: both;
+  display: block;
+  max-width: 100%;
+  page-break-inside: avoid;
+  width: 11.2em;
+  margin: 1.5em auto 1.4em;
+}
+.class_s6sz {
+  clear: both;
+  display: block;
+  font-weight: 800;
+  margin: 2.225em 0 0;
+}
+.class_s6t {
+  clear: both;
+  color: #242774;
+  display: block;
+  margin: 1.5em 0 0;
+}
+.class_s6t1 {
+  clear: both;
+  color: #242774;
+  display: block;
+  font-weight: 800;
+  margin: 1.5em 0 0;
+}
+.class_s6uw {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1.5em;
+  max-width: 100%;
+  page-break-inside: avoid;
+  width: 11.2em;
+}
+.class_s7 {
+  display: block;
+  margin-bottom: 0.42em;
+  padding-top: 3.0015em;
+}
+.class_s7s {
+  color: #242774;
+  display: block;
+  font-size: 0.83333em;
+  page-break-inside: avoid;
+  margin: 0 0 0 5.208%;
+}
+.class_s7u {
+  display: block;
+  margin-bottom: 0.1em;
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: left;
+  text-indent: -5.209%;
+}
+.class_s8 {
+  display: block;
+  text-indent: 0;
+  margin: 0;
+}
+.class_s9 {
+  display: block;
+  margin: 0;
+}
+.class_s9s {
+  display: block;
+  margin: 0 0 0.7125em;
+}
+.class_s9z {
+  display: block;
+  line-height: 1.2;
+  margin: 0;
+}
+.class_s10 {
+  display: block;
+  font-family: Cormorant SC, serif;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  margin-bottom: 2em;
+  margin-left: 6%;
+  margin-right: 6%;
+  min-height: 12em;
+  text-align: center;
+}
+.class_s11 {
+  display: block;
+  text-align: justify;
+  text-indent: 1.5em;
+  margin: 0;
+}
+.class_s11t {
+  display: block;
+  font-style: italic;
+  font-weight: 800;
+  margin: 0;
+}
+.class_s12 {
+  display: block;
+  font-family: Cormorant SC, serif;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  margin-bottom: 2em;
+  margin-left: 6%;
+  margin-right: 6%;
+  min-height: 12em;
+}
+.class_s12z {
+  display: block;
+  text-align: center;
+  text-indent: 0;
+  margin: 0;
+}
+.class_s12z1 {
+  display: block;
+  text-align: center;
+  margin: 0;
+}
+.class_s12z2 {
+  color: #242774;
+  display: block;
+  margin: 0;
+}
+.class_s13 {
+  display: block;
+  margin-left: 25%;
+  margin-right: 25%;
+  width: 50%;
+}
+.class_s16z {
+  display: block;
+  font-style: italic;
+  text-align: center;
+  text-indent: 0;
+  margin: 0;
+}
+.class_s16z1 {
+  display: block;
+  font-style: italic;
+  text-align: center;
+  margin: 0;
+}
+.class_s17z {
+  display: block;
+  font-weight: 800;
+  text-align: center;
+  margin: 0.84em 0 1.4em;
+}
+.class_s70d {
+  font-style: italic;
+}
+.class_s70e {
+  font-size: 0.9em;
+  padding-right: 0.3em;
+}
+.class_s70f {
+  color: #242774;
+  text-decoration: underline;
+}
+.class_s70f1 {
+  text-decoration: underline;
+}
+.class_s70h {
+  font-size: 0.75em;
+  vertical-align: super;
+}
+.class_s70k {
+  font-style: normal;
+  font-weight: 800;
+}
+.class_s70m {
+  font-weight: 800;
+}
+.class_s70m1 {
+  font-style: italic;
+  font-weight: 800;
+}
+.class_s71e {
+  font-size: 0.75em;
+  margin-left: 0.05em;
+  vertical-align: super;
+}
+.class_s71g {
+  letter-spacing: 0.1875em;
+  line-height: 1.2;
+}
+.class_sa {
+  display: block;
+  min-height: 2.25em;
+}
+.class_sa1 {
+  display: block;
+  margin-bottom: 0.25em;
+}
+.class_sa2 {
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  display: inline-block;
+  font-size: 1.29167em;
+  line-height: 1.2;
+  padding-bottom: 0.35em;
+  padding-left: 2.131%;
+  padding-right: 2.131%;
+}
+.class_sa3 {
+  float: left;
+  font-family: Cormorant, CCL;
+  font-size: 2em;
+  line-height: 100%;
+  margin-right: 0.1em;
+}
+.class_sbb {
+  height: auto;
+  vertical-align: top;
+  width: 100%;
+}
+.class_sbd {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 28.1%;
+}
+.class_sbh {
+  clear: both;
+  display: block;
+  max-width: 100%;
+  page-break-inside: avoid;
+  text-align: center;
+  text-indent: 0;
+  width: 11.2em;
+  margin: 1.4em auto;
+}
+.class_sbh1 {
+  clear: both;
+  display: block;
+  max-width: 100%;
+  page-break-inside: avoid;
+  text-align: center;
+  width: 11.2em;
+  margin: 1.4em auto;
+}
+.class_sd {
+  clear: both;
+  display: block;
+  font-style: italic;
+  text-align: center;
+  text-indent: 0;
+  margin: 1.4em 0;
+}
+.class_sd1 {
+  clear: both;
+  display: block;
+  font-weight: 800;
+  text-align: center;
+  text-indent: 0;
+  margin: 1.4em 0;
+}
+.class_sd2 {
+  clear: both;
+  display: block;
+  font-weight: 800;
+  text-align: center;
+  margin: 1.4em 0;
+}
+.class_sd3 {
+  clear: both;
+  display: block;
+  font-style: italic;
+  text-align: center;
+  margin: 1.4em 0;
+}
+.class_sd4 {
+  clear: both;
+  display: block;
+  text-align: center;
+  margin: 1.4em 0;
+}
+.class_sd5 {
+  clear: both;
+  display: block;
+  text-align: center;
+  text-indent: 0;
+  margin: 1.4em 0;
+}
+.class_sd6 {
+  clear: both;
+  display: block;
+  margin: 1.4em 0;
+}
+.class_sdk {
+  float: left;
+  font-family: Cormorant, CCL;
+  font-size: 3em;
+  line-height: 100%;
+  margin-right: 0.1em;
+}
+.class_sdk1 {
+  display: block;
+  text-align: justify;
+  margin: 0;
+}
+.class_sdx {
+  display: block;
+  font-style: italic;
+  margin: 0;
+}
+.class_sdx1 {
+  display: block;
+  font-style: italic;
+  text-align: justify;
+  text-indent: 1.5em;
+  margin: 0;
+}
+.class_sfv {
+  display: block;
+  font-weight: 800;
+  margin: 0;
+}
+.class_sfv1 {
+  display: block;
+  font-weight: 800;
+  text-align: justify;
+  text-indent: 1.5em;
+  margin: 0;
+}
+.class_sg {
+  clear: both;
+  display: block;
+  text-indent: 0;
+  margin: 1.665em 0 0;
+}
+.class_sg1 {
+  clear: both;
+  display: block;
+  text-align: justify;
+  margin: 1.665em 0 0;
+}
+.class_sh {
+  height: auto;
+  vertical-align: middle;
+  width: 100%;
+}
+.class_shh {
+  clear: both;
+  display: block;
+  font-style: italic;
+  font-weight: 800;
+  text-align: center;
+  text-indent: 0;
+  margin: 1.4em 0 0;
+}
+.class_shh1 {
+  clear: both;
+  display: block;
+  font-style: italic;
+  font-weight: 800;
+  text-align: center;
+  margin: 1.4em 0 0;
+}
+.class_shk {
+  display: block;
+  font-style: italic;
+  font-weight: 800;
+  text-align: center;
+  text-indent: 0;
+  margin: 0 0 1.4em;
+}
+.class_shk1 {
+  display: block;
+  font-style: italic;
+  font-weight: 800;
+  text-align: center;
+  margin: 0 0 1.4em;
+}
+.class_sjm {
+  clear: both;
+  display: block;
+  font-style: italic;
+  text-align: center;
+  margin: 1.4em 0 0;
+}
+.class_sjm1 {
+  clear: both;
+  display: block;
+  text-align: center;
+  margin: 1.4em 0 0;
+}
+.class_sjm2 {
+  clear: both;
+  display: block;
+  text-align: center;
+  text-indent: 0;
+  margin: 1.4em 0 0;
+}
+.class_sjm3 {
+  clear: both;
+  display: block;
+  font-style: italic;
+  text-align: center;
+  text-indent: 0;
+  margin: 1.4em 0 0;
+}
+.class_sjp {
+  display: block;
+  font-style: italic;
+  text-align: center;
+  margin: 0 0 1.4em;
+}
+.class_sjp1 {
+  display: block;
+  text-align: center;
+  text-indent: 0;
+  margin: 0 0 1.4em;
+}
+.class_sjp2 {
+  display: block;
+  font-style: italic;
+  text-align: center;
+  text-indent: 0;
+  margin: 0 0 1.4em;
+}
+.class_sjp3 {
+  display: block;
+  text-align: center;
+  margin: 0 0 1.4em;
+}
+.class_sk {
+  display: block;
+  width: 100%;
+}
+.class_sk1 {
+  display: block;
+  font-style: italic;
+  font-weight: 800;
+  text-align: center;
+  margin: 0;
+}
+.class_sk2 {
+  display: block;
+  font-style: italic;
+  font-weight: 800;
+  text-align: center;
+  text-indent: 0;
+  margin: 0;
+}
+.class_skb {
+  clear: both;
+  display: block;
+  font-weight: 800;
+  text-align: left;
+  margin: 1.4em 4.688% 0;
+}
+.class_skd {
+  display: block;
+  text-align: left;
+  margin: 0 4.688%;
+}
+.class_sm {
+  clear: both;
+  display: block;
+  text-align: left;
+  margin: 1.4em 4.688% 0;
+}
+.class_srp {
+  clear: both;
+  display: block;
+  font-weight: 800;
+  text-align: center;
+  text-indent: 0;
+  margin: 1.4em 0 0;
+}
+.class_srp1 {
+  clear: both;
+  display: block;
+  font-weight: 800;
+  text-align: center;
+  margin: 1.4em 0 0;
+}
+.class_srp2 {
+  clear: both;
+  display: block;
+  font-weight: 800;
+  margin: 1.4em 0 0;
+}
+.class_srs {
+  display: block;
+  font-weight: 800;
+  text-align: center;
+  text-indent: 0;
+  margin: 0;
+}
+.class_srs1 {
+  display: block;
+  font-weight: 800;
+  text-align: center;
+  margin: 0;
+}
+.class_srv {
+  display: block;
+  font-weight: 800;
+  text-align: center;
+  text-indent: 0;
+  margin: 0 0 1.4em;
+}
+.class_srv1 {
+  display: block;
+  font-weight: 800;
+  text-align: center;
+  margin: 0 0 1.4em;
+}
+.class_su {
+  clear: both;
+  display: block;
+  font-size: 0.83333em;
+  font-weight: 800;
+  text-align: center;
+  text-indent: 0;
+  margin: 2.77777em 0 0;
+}
+.class_sw {
+  display: block;
+  font-size: 0.83333em;
+  font-weight: 800;
+  text-align: center;
+  text-indent: 0;
+  margin: 0;
+}
+.class_sx {
+  clear: both;
+  display: block;
+  font-style: italic;
+  font-weight: 800;
+  text-align: center;
+  text-indent: 0;
+  margin: 1.4em 0;
+}
+.class_sx1 {
+  clear: both;
+  display: block;
+  font-style: italic;
+  font-weight: 800;
+  text-align: center;
+  margin: 1.4em 0;
+}
+.class_sy {
+  display: block;
+  font-size: 0.83333em;
+  margin: 1.55556em 0 0;
+}
+.class1 {
+  display: block;
+  font-family: Palatino, serif;
+  font-size: 1em;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: left;
+  text-indent: 0.05em;
+  margin: 0 5pt;
+}
+.class2 {
+  display: block;
+  font-family: Palatino, serif;
+  font-size: 1em;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0 5pt;
+}
+.class3 {
+  display: block;
+  font-family: Palatino, serif;
+  font-size: 1em;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: justify;
+  text-indent: 1.5em;
+  margin: 0 5pt;
+}
+.class4 {
+  font-style: normal;
+}
+.class5 {
+  font-weight: normal;
+}
+.heading_s {
+  display: block;
+  font-size: 1.29167em;
+  font-weight: bold;
+  line-height: 1.161;
+  page-break-inside: avoid;
+  margin: 0.996678em 0 0;
+}
+.heading_s1h {
+  display: block;
+  font-size: 1.29167em;
+  font-weight: bold;
+  line-height: 1.2;
+  page-break-inside: avoid;
+  margin: 0;
+}
+.heading_s2m {
+  display: block;
+  font-size: 1.29167em;
+  font-weight: bold;
+  line-height: 1.175;
+  page-break-inside: avoid;
+  margin: 0;
+}
+.heading_sa {
+  display: block;
+  font-size: 1.29167em;
+  font-weight: bold;
+  line-height: 1.161;
+  page-break-inside: avoid;
+  margin: 0;
+}

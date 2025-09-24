@@ -1,0 +1,10 @@
+{
+    "edits": [
+        {
+            "match": "fullmaatch",
+            "line": "If you spot this tale on Amazon, know that it has been stolen. Report the violation.\n\n",
+            "new_line": ""
+        }
+    ]
+}
+

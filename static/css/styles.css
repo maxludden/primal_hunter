@@ -1,0 +1,105 @@
+/*
+  dropcap-theme.css
+  Configurable custom properties for drop caps and color themes.
+*/
+
+:root {
+  --dropcap-lines: 3;
+  --dropcap-font-family: serif;
+  --dropcap-font-weight: bold;
+  --dropcap-margin-right: 0.1em;
+  --dropcap-margin-top: 0;
+  --dropcap-color: inherit;
+  --dropcap-fallback-font-size: 3em;
+
+  --color-light-text: #000000;
+  --color-light-background: #fbfbfb;
+  --color-sepia-text: #000000;
+  --color-sepia-background: #f8f1e3;
+  --color-gray-text: #c9caca;
+  --color-gray-background: #5a5a5c;
+  --color-night-text: #b0b0b0;
+  --color-night-background: #121212;
+  --color-night-dropcap: #d0d0d0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  line-height: 1.4;
+  color: var(--color-light-text);
+  background-color: var(--color-light-background);
+}
+
+.chapter p:first-child::first-letter {
+  float: left;
+  font-family: var(--dropcap-font-family);
+  font-weight: var(--dropcap-font-weight);
+  font-size: var(--dropcap-fallback-font-size);
+  line-height: 1;
+  color: var(--dropcap-color);
+  margin-right: var(--dropcap-margin-right);
+  margin-top: var(--dropcap-margin-top);
+}
+
+@supports (initial-letter: 3 1) {
+  .chapter p:first-child::first-letter {
+    float: none;
+    font-size: inherit;
+    -webkit-initial-letter: var(--dropcap-lines) 1;
+    initial-letter: var(--dropcap-lines) 1;
+  }
+}
+
+@supports not (initial-letter: 1 1) {
+  .chapter p:first-child::first-letter {
+    -webkit-initial-letter: unset;
+    initial-letter: unset;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: var(--color-night-text);
+    background-color: var(--color-night-background);
+  }
+
+  .chapter p:first-child::first-letter {
+    color: var(--color-night-dropcap);
+  }
+}
+
+:root[__ibooks_internal_theme*="Night"] body {
+  color: var(--color-night-text);
+  background-color: var(--color-night-background);
+}
+
+:root[__ibooks_internal_theme*="Night"] .chapter p:first-child::first-letter {
+  color: var(--color-night-dropcap);
+}
+
+:root[__ibooks_internal_theme*="Gray"] body {
+  color: var(--color-gray-text);
+  background-color: var(--color-gray-background);
+}
+
+:root[__ibooks_internal_theme*="Sepia"] body {
+  color: var(--color-sepia-text);
+  background-color: var(--color-sepia-background);
+}
+
+@media (max-width: 480px) {
+  .chapter p:first-child::first-letter {
+    font-size: 2em;
+    float: none;
+    margin-right: 0;
+  }
+
+  @supports (initial-letter: 2 1) {
+    .chapter p:first-child::first-letter {
+      -webkit-initial-letter: 2 1;
+      initial-letter: 2 1;
+    }
+  }
+}

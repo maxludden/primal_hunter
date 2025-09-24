@@ -1,0 +1,489 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="eng">
+  <head>
+    <meta name="dtb:uid" content="6935f7bb-65c5-4034-b0a9-96fcc15b25ad"/>
+    <meta name="dtb:depth" content="2"/>
+    <meta name="dtb:generator" content="calibre (5.38.0)"/>
+    <meta name="dtb:totalPageCount" content="0"/>
+    <meta name="dtb:maxPageNumber" content="0"/>
+  </head>
+  <docTitle>
+    <text>The Primal Hunter</text>
+  </docTitle>
+  <navMap>
+    <navPoint id="num_1" playOrder="1" class="chapter">
+      <navLabel>
+        <text>Copyright</text>
+      </navLabel>
+      <content src="index_split_000.html"/>
+    </navPoint>
+    <navPoint id="num_2" playOrder="2" class="chapter">
+      <navLabel>
+        <text>Also by Zogarth</text>
+      </navLabel>
+      <content src="index_split_001.html"/>
+    </navPoint>
+    <navPoint id="num_3" playOrder="3" class="chapter">
+      <navLabel>
+        <text>Contents</text>
+      </navLabel>
+      <content src="index_split_002.html"/>
+    </navPoint>
+    <navPoint id="num_4" playOrder="4" class="chapter">
+      <navLabel>
+        <text>1. Another Monday morning</text>
+      </navLabel>
+      <content src="index_split_003.html"/>
+    </navPoint>
+    <navPoint id="num_5" playOrder="5" class="chapter">
+      <navLabel>
+        <text>2. Introduction</text>
+      </navLabel>
+      <content src="index_split_005.html"/>
+    </navPoint>
+    <navPoint id="num_6" playOrder="6" class="chapter">
+      <navLabel>
+        <text>3. The tutorial commences</text>
+      </navLabel>
+      <content src="index_split_007.html"/>
+    </navPoint>
+    <navPoint id="num_7" playOrder="7" class="chapter">
+      <navLabel>
+        <text>4. First battle</text>
+      </navLabel>
+      <content src="index_split_009.html"/>
+    </navPoint>
+    <navPoint id="num_8" playOrder="8" class="chapter">
+      <navLabel>
+        <text>5. Big pig</text>
+      </navLabel>
+      <content src="index_split_011.html"/>
+    </navPoint>
+    <navPoint id="num_9" playOrder="9" class="chapter">
+      <navLabel>
+        <text>6. Questioning</text>
+      </navLabel>
+      <content src="index_split_013.html"/>
+    </navPoint>
+    <navPoint id="num_10" playOrder="10" class="chapter">
+      <navLabel>
+        <text>7. Training &amp; rest</text>
+      </navLabel>
+      <content src="index_split_015.html"/>
+    </navPoint>
+    <navPoint id="num_11" playOrder="11" class="chapter">
+      <navLabel>
+        <text>8. A wonderful night</text>
+      </navLabel>
+      <content src="index_split_017.html"/>
+    </navPoint>
+    <navPoint id="num_12" playOrder="12" class="chapter">
+      <navLabel>
+        <text>9. Blood</text>
+      </navLabel>
+      <content src="index_split_019.html"/>
+    </navPoint>
+    <navPoint id="num_13" playOrder="13" class="chapter">
+      <navLabel>
+        <text>10. Reflection &amp; frustration</text>
+      </navLabel>
+      <content src="index_split_021.html"/>
+    </navPoint>
+    <navPoint id="num_14" playOrder="14" class="chapter">
+      <navLabel>
+        <text>11. Friend or foe?</text>
+      </navLabel>
+      <content src="index_split_023.html"/>
+    </navPoint>
+    <navPoint id="num_15" playOrder="15" class="chapter">
+      <navLabel>
+        <text>12. A splitting provocation</text>
+      </navLabel>
+      <content src="index_split_025.html"/>
+    </navPoint>
+    <navPoint id="num_16" playOrder="16" class="chapter">
+      <navLabel>
+        <text>13. Nicholas (1/2)</text>
+      </navLabel>
+      <content src="index_split_027.html"/>
+    </navPoint>
+    <navPoint id="num_17" playOrder="17" class="chapter">
+      <navLabel>
+        <text>14. Nicholas (part 2/2)</text>
+      </navLabel>
+      <content src="index_split_029.html"/>
+    </navPoint>
+    <navPoint id="num_18" playOrder="18" class="chapter">
+      <navLabel>
+        <text>15. Diverging paths</text>
+      </navLabel>
+      <content src="index_split_031.html"/>
+    </navPoint>
+    <navPoint id="num_19" playOrder="19" class="chapter">
+      <navLabel>
+        <text>16. A bit of hunting</text>
+      </navLabel>
+      <content src="index_split_033.html"/>
+    </navPoint>
+    <navPoint id="num_20" playOrder="20" class="chapter">
+      <navLabel>
+        <text>17. Loot</text>
+      </navLabel>
+      <content src="index_split_035.html"/>
+    </navPoint>
+    <navPoint id="num_21" playOrder="21" class="chapter">
+      <navLabel>
+        <text>18. Finding a challenge</text>
+      </navLabel>
+      <content src="index_split_037.html"/>
+    </navPoint>
+    <navPoint id="num_22" playOrder="22" class="chapter">
+      <navLabel>
+        <text>19. Everybody Loves Blue Mushrooms</text>
+      </navLabel>
+      <content src="index_split_039.html"/>
+    </navPoint>
+    <navPoint id="num_23" playOrder="23" class="chapter">
+      <navLabel>
+        <text>20. Death &amp; courage</text>
+      </navLabel>
+      <content src="index_split_041.html"/>
+    </navPoint>
+    <navPoint id="num_24" playOrder="24" class="chapter">
+      <navLabel>
+        <text>21. An impactful choice</text>
+      </navLabel>
+      <content src="index_split_043.html"/>
+    </navPoint>
+    <navPoint id="num_25" playOrder="25" class="chapter">
+      <navLabel>
+        <text>22. Alchemy!</text>
+      </navLabel>
+      <content src="index_split_045.html"/>
+    </navPoint>
+    <navPoint id="num_26" playOrder="26" class="chapter">
+      <navLabel>
+        <text>23. Progression</text>
+      </navLabel>
+      <content src="index_split_047.html"/>
+    </navPoint>
+    <navPoint id="num_27" playOrder="27" class="chapter">
+      <navLabel>
+        <text>24. Palate of the Malefic Viper</text>
+      </navLabel>
+      <content src="index_split_049.html"/>
+    </navPoint>
+    <navPoint id="num_28" playOrder="28" class="chapter">
+      <navLabel>
+        <text>25. Enjoying life</text>
+      </navLabel>
+      <content src="index_split_051.html"/>
+    </navPoint>
+    <navPoint id="num_29" playOrder="29" class="chapter">
+      <navLabel>
+        <text>26. More skills!</text>
+      </navLabel>
+      <content src="index_split_053.html"/>
+    </navPoint>
+    <navPoint id="num_30" playOrder="30" class="chapter">
+      <navLabel>
+        <text>27. Evolution</text>
+      </navLabel>
+      <content src="index_split_055.html"/>
+    </navPoint>
+    <navPoint id="num_31" playOrder="31" class="chapter">
+      <navLabel>
+        <text>28. Base building</text>
+      </navLabel>
+      <content src="index_split_057.html"/>
+    </navPoint>
+    <navPoint id="num_32" playOrder="32" class="chapter">
+      <navLabel>
+        <text>29. It's just logical</text>
+      </navLabel>
+      <content src="index_split_059.html"/>
+    </navPoint>
+    <navPoint id="num_33" playOrder="33" class="chapter">
+      <navLabel>
+        <text>30. Preparations for evolution</text>
+      </navLabel>
+      <content src="index_split_061.html"/>
+    </navPoint>
+    <navPoint id="num_34" playOrder="34" class="chapter">
+      <navLabel>
+        <text>31. Professional evolution</text>
+      </navLabel>
+      <content src="index_split_063.html"/>
+    </navPoint>
+    <navPoint id="num_35" playOrder="35" class="chapter">
+      <navLabel>
+        <text>32. A very weird encounter</text>
+      </navLabel>
+      <content src="index_split_065.html"/>
+    </navPoint>
+    <navPoint id="num_36" playOrder="36" class="chapter">
+      <navLabel>
+        <text>33. True Blessing of the Malefic Viper</text>
+      </navLabel>
+      <content src="index_split_067.html"/>
+    </navPoint>
+    <navPoint id="num_37" playOrder="37" class="chapter">
+      <navLabel>
+        <text>34. Manipulation</text>
+      </navLabel>
+      <content src="index_split_069.html"/>
+    </navPoint>
+    <navPoint id="num_38" playOrder="38" class="chapter">
+      <navLabel>
+        <text>35. Blood of the Malefic Viper</text>
+      </navLabel>
+      <content src="index_split_071.html"/>
+    </navPoint>
+    <navPoint id="num_39" playOrder="39" class="chapter">
+      <navLabel>
+        <text>36. A battle of life &amp; death</text>
+      </navLabel>
+      <content src="index_split_073.html"/>
+    </navPoint>
+    <navPoint id="num_40" playOrder="40" class="chapter">
+      <navLabel>
+        <text>37. Leave nothing behind</text>
+      </navLabel>
+      <content src="index_split_075.html"/>
+    </navPoint>
+    <navPoint id="num_41" playOrder="41" class="chapter">
+      <navLabel>
+        <text>38. Broken</text>
+      </navLabel>
+      <content src="index_split_077.html"/>
+    </navPoint>
+    <navPoint id="num_42" playOrder="42" class="chapter">
+      <navLabel>
+        <text>39. Powershot</text>
+      </navLabel>
+      <content src="index_split_079.html"/>
+    </navPoint>
+    <navPoint id="num_43" playOrder="43" class="chapter">
+      <navLabel>
+        <text>40. Defect &amp; Meeting</text>
+      </navLabel>
+      <content src="index_split_081.html"/>
+    </navPoint>
+    <navPoint id="num_44" playOrder="44" class="chapter">
+      <navLabel>
+        <text>41. Clash</text>
+      </navLabel>
+      <content src="index_split_083.html"/>
+    </navPoint>
+    <navPoint id="num_45" playOrder="45" class="chapter">
+      <navLabel>
+        <text>42. Twin-Fang Style</text>
+      </navLabel>
+      <content src="index_split_085.html"/>
+    </navPoint>
+    <navPoint id="num_46" playOrder="46" class="chapter">
+      <navLabel>
+        <text>43. Big Pig II: Steeltusk Edition</text>
+      </navLabel>
+      <content src="index_split_087.html"/>
+    </navPoint>
+    <navPoint id="num_47" playOrder="47" class="chapter">
+      <navLabel>
+        <text>44. "Partners"</text>
+      </navLabel>
+      <content src="index_split_089.html"/>
+    </navPoint>
+    <navPoint id="num_48" playOrder="48" class="chapter">
+      <navLabel>
+        <text>45. Shadow Vault &amp; Instincts</text>
+      </navLabel>
+      <content src="index_split_091.html"/>
+    </navPoint>
+    <navPoint id="num_49" playOrder="49" class="chapter">
+      <navLabel>
+        <text>46. Unexpected Encounter (1/3)</text>
+      </navLabel>
+      <content src="index_split_093.html"/>
+    </navPoint>
+    <navPoint id="num_50" playOrder="50" class="chapter">
+      <navLabel>
+        <text>47. Unexpected Encounter (2/3)</text>
+      </navLabel>
+      <content src="index_split_095.html"/>
+    </navPoint>
+    <navPoint id="num_51" playOrder="51" class="chapter">
+      <navLabel>
+        <text>48. Unexpected Encounter (3/3)</text>
+      </navLabel>
+      <content src="index_split_097.html"/>
+    </navPoint>
+    <navPoint id="num_52" playOrder="52" class="chapter">
+      <navLabel>
+        <text>49. Enemy of the people</text>
+      </navLabel>
+      <content src="index_split_099.html"/>
+    </navPoint>
+    <navPoint id="num_53" playOrder="53" class="chapter">
+      <navLabel>
+        <text>50. Friendship</text>
+      </navLabel>
+      <content src="index_split_101.html"/>
+    </navPoint>
+    <navPoint id="num_54" playOrder="54" class="chapter">
+      <navLabel>
+        <text>51. Meeting old friends (1/2)</text>
+      </navLabel>
+      <content src="index_split_103.html"/>
+    </navPoint>
+    <navPoint id="num_55" playOrder="55" class="chapter">
+      <navLabel>
+        <text>52. Meeting old friends (2/2)</text>
+      </navLabel>
+      <content src="index_split_105.html"/>
+    </navPoint>
+    <navPoint id="num_56" playOrder="56" class="chapter">
+      <navLabel>
+        <text>53. Goals</text>
+      </navLabel>
+      <content src="index_split_107.html"/>
+    </navPoint>
+    <navPoint id="num_57" playOrder="57" class="chapter">
+      <navLabel>
+        <text>54. Class Evolution</text>
+      </navLabel>
+      <content src="index_split_109.html"/>
+    </navPoint>
+    <navPoint id="num_58" playOrder="58" class="chapter">
+      <navLabel>
+        <text>55. Ambitious Hunter</text>
+      </navLabel>
+      <content src="index_split_111.html"/>
+    </navPoint>
+    <navPoint id="num_59" playOrder="59" class="chapter">
+      <navLabel>
+        <text>56. Metal Savant</text>
+      </navLabel>
+      <content src="index_split_113.html"/>
+    </navPoint>
+    <navPoint id="num_60" playOrder="60" class="chapter">
+      <navLabel>
+        <text>57. Metal &amp; Nature</text>
+      </navLabel>
+      <content src="index_split_115.html"/>
+    </navPoint>
+    <navPoint id="num_61" playOrder="61" class="chapter">
+      <navLabel>
+        <text>58. Herrmann Schmidt</text>
+      </navLabel>
+      <content src="index_split_117.html"/>
+    </navPoint>
+    <navPoint id="num_62" playOrder="62" class="chapter">
+      <navLabel>
+        <text>59. Stamina</text>
+      </navLabel>
+      <content src="index_split_119.html"/>
+    </navPoint>
+    <navPoint id="num_63" playOrder="63" class="chapter">
+      <navLabel>
+        <text>60. Idiots</text>
+      </navLabel>
+      <content src="index_split_121.html"/>
+    </navPoint>
+    <navPoint id="num_64" playOrder="64" class="chapter">
+      <navLabel>
+        <text>61. A bitter end</text>
+      </navLabel>
+      <content src="index_split_123.html"/>
+    </navPoint>
+    <navPoint id="num_65" playOrder="65" class="chapter">
+      <navLabel>
+        <text>62. Loot 2.0</text>
+      </navLabel>
+      <content src="index_split_125.html"/>
+    </navPoint>
+    <navPoint id="num_66" playOrder="66" class="chapter">
+      <navLabel>
+        <text>63. Arrows</text>
+      </navLabel>
+      <content src="index_split_127.html"/>
+    </navPoint>
+    <navPoint id="num_67" playOrder="67" class="chapter">
+      <navLabel>
+        <text>64. Badger's Den</text>
+      </navLabel>
+      <content src="index_split_129.html"/>
+    </navPoint>
+    <navPoint id="num_68" playOrder="68" class="chapter">
+      <navLabel>
+        <text>65. Chilling with badgers</text>
+      </navLabel>
+      <content src="index_split_131.html"/>
+    </navPoint>
+    <navPoint id="num_69" playOrder="69" class="chapter">
+      <navLabel>
+        <text>66. The Notorious B.I.G. Badger</text>
+      </navLabel>
+      <content src="index_split_133.html"/>
+    </navPoint>
+    <navPoint id="num_70" playOrder="70" class="chapter">
+      <navLabel>
+        <text>67. Infused Powershot</text>
+      </navLabel>
+      <content src="index_split_135.html"/>
+    </navPoint>
+    <navPoint id="num_71" playOrder="71" class="chapter">
+      <navLabel>
+        <text>68. Dungeon = Alchemy</text>
+      </navLabel>
+      <content src="index_split_137.html"/>
+    </navPoint>
+    <navPoint id="num_72" playOrder="72" class="chapter">
+      <navLabel>
+        <text>69. Augur of Hope</text>
+      </navLabel>
+      <content src="index_split_139.html"/>
+    </navPoint>
+    <navPoint id="num_73" playOrder="73" class="chapter">
+      <navLabel>
+        <text>70. Excelling</text>
+      </navLabel>
+      <content src="index_split_141.html"/>
+    </navPoint>
+    <navPoint id="num_74" playOrder="74" class="chapter">
+      <navLabel>
+        <text>71. Dream</text>
+      </navLabel>
+      <content src="index_split_143.html"/>
+    </navPoint>
+    <navPoint id="num_75" playOrder="75" class="chapter">
+      <navLabel>
+        <text>72. Den Mother</text>
+      </navLabel>
+      <content src="index_split_145.html"/>
+    </navPoint>
+    <navPoint id="num_76" playOrder="76" class="chapter">
+      <navLabel>
+        <text>73. First quest &amp; Venomfang</text>
+      </navLabel>
+      <content src="index_split_147.html"/>
+    </navPoint>
+    <navPoint id="num_77" playOrder="77" class="chapter">
+      <navLabel>
+        <text>Thank you for reading The Primal Hunter</text>
+      </navLabel>
+      <content src="index_split_149.html"/>
+    </navPoint>
+    <navPoint id="num_78" playOrder="78" class="chapter">
+      <navLabel>
+        <text>Groups</text>
+      </navLabel>
+      <content src="index_split_150.html"/>
+    </navPoint>
+    <navPoint id="num_79" playOrder="79" class="chapter">
+      <navLabel>
+        <text>LitRPG</text>
+      </navLabel>
+      <content src="index_split_151.html"/>
+    </navPoint>
+  </navMap>
+</ncx>

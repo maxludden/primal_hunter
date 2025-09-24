@@ -1,0 +1,152 @@
+{
+    "edit": [
+        {
+            "line": "\"That’s the plan,\" Jake replied, smirking.",
+            "new_line": "[i]\"That’s the plan,\"[/i] Jake replied, smirking.",
+            "format": "italic",
+            "justify": "default"
+        },
+        {
+            "line": "\"Boss spotted on the dark side of the planet,\" Jake said after reaching out to the others. \"How about you guys?\"",
+            "new_line": "[i]\"Boss spotted on the dark side of the planet,\"[/i] Jake said after reaching out to the others. [i]\"How about you guys?\"[/i]",
+            "format": "italic",
+            "justify": "default"
+        },
+        {
+            "line": "Achievement earned: Slay the Lord of the Dunes before it ever sees the sunlight. 3 Nevermore Points gained.",
+            "new_line": "**Achievement earned: Slay the Lord of the Dunes before it ever sees the sunlight. 3 Nevermore Points gained.**",
+            "format": "bold",
+            "justify": "center"
+        },
+        {
+            "line": "Achievement earned: Slay the Lord of the Dunes within 24 hours of entering the first floor. 1 Nevermore Point gained.",
+            "new_line": "**Achievement earned: Slay the Lord of the Dunes within 24 hours of entering the first floor. 1 Nevermore Point gained.**",
+            "format": "bold",
+            "justify": "center"
+        },
+        {
+            "line": "\\*You have slain [Lord of the Dunes – lvl 205] – Bonus experience earned for killing an enemy above your level\\*",
+            "new_line": "***\\*You have slain [Lord of the Dunes – lvl 205] – Bonus experience earned for killing an enemy above your level\\****",
+            "format": "bold italic",
+            "justify": "center"
+        },
+        {
+            "line": "You have entered Nevermore.",
+            "new_line": "**You have entered Nevermore.**",
+            "format": "bold",
+            "justify": "center"
+        },
+        {
+            "line": "Welcome to the first floor of the C-grade portion of Nevermore: the Sunlight Dunes. In order to progress to the next floor, the main objective of this floor must be completed, and the entrance to the next floor must be entered together with all surviving party members.",
+            "new_line": "**Welcome to the first floor of the C-grade portion of Nevermore: the Sunlight Dunes. In order to progress to the next floor, the main objective of this floor must be completed, and the entrance to the next floor must be entered together with all surviving party members.**",
+            "format": "bold",
+            "justify": "center"
+        },
+        {
+            "line": "Completing events, achievements, and objectives rewards points that count towards the leaderboards and final rewards.",
+            "new_line": "**Completing events, achievements, and objectives rewards points that count towards the leaderboards and final rewards.**",
+            "format": "bold",
+            "justify": "center"
+        },
+        {
+            "line": "Main objective: Defeat the Lord of the Dunes.",
+            "new_line": "**Main objective: Defeat the Lord of the Dunes.**",
+            "format": "bold",
+            "justify": "center"
+        },
+        {
+            "line": "Bonus objectives: Gather at least 1000 Sunlight Fragments of the Dunes to open the Lord's Treasury.",
+            "new_line": "**Bonus objectives: Gather at least 1000 Sunlight Fragments of the Dunes to open the Lord's Treasury.**",
+            "format": "bold",
+            "justify": "center"
+        },
+        {
+            "line": "Current progress: Lord of the Dunes (0/1), Sunlight Fragments of the Dunes (0/1000)",
+            "new_line": "**Current progress: Lord of the Dunes (0/1), Sunlight Fragments of the Dunes (0/1000)**",
+            "format": "bold",
+            "justify": "center"
+        },
+        {
+            "line": "Note: More events, achievements, or objectives may be hidden on the floor.",
+            "new_line": "**Note: More events, achievements, or objectives may be hidden on the floor.**",
+            "format": "bold",
+            "justify": "default"
+        },
+        {
+            "line": "Godspeed, Chosen of Vilastromoz; I look forward to your performance. Do not expect any assistance.",
+            "new_line": "**Godspeed, Chosen of Vilastromoz; I look forward to your performance. Do not expect any assistance.**",
+            "format": "bold",
+            "justify": "default"
+        },
+        {
+            "line": "Current Nevermore Points: 0",
+            "new_line": "**Current Nevermore Points: 0**",
+            "format": "bold",
+            "justify": "default"
+        },
+        {
+            "line": "Current progress: Sunlight Fragments of the Dunes (1/1000)",
+            "new_line": "**Current progress: Sunlight Fragments of the Dunes (1/1000)**",
+            "format": "bold",
+            "justify": "center"
+        },
+        {
+            "line": "Current progress: Sunlight Fragments of the Dunes (1/1000)",
+            "new_line": "**Current progress: Sunlight Fragments of the Dunes (1/1000)**",
+            "format": "bold",
+            "justify": "center"
+        },
+        {
+            "line": "[Vine Seed Soldier – lvl 194]",
+            "new_line": "**[Vine Seed Soldier – lvl 194]**",
+            "format": "bold",
+            "justify": "center"
+        },
+        {
+            "line": "[Ice Wraith – lvl 202]",
+            "new_line": "**[Ice Wraith – lvl 202]**",
+            "format": "bold",
+            "justify": "center"
+        },
+        {
+            "line": "[Lord of the Dunes – lvl 205]",
+            "new_line": "**[Lord of the Dunes – lvl 205]**",
+            "format": "bold",
+            "justify": "center"
+        },
+        {
+            "line": "Current progress: Sunlight Fragments of the Dunes (654/1000)",
+            "new_line": "**Current progress: Sunlight Fragments of the Dunes (654/1000)**",
+            "format": "bold",
+            "justify": "center"
+        },
+        {
+            "line": "\"Pretty sure I found it, but there is also this other teleportation circle. It looks like a short-range one, though.\" Jake passed along a mental image to the party.",
+            "new_line": "*\"Pretty sure I found it, but there is also this other teleportation circle. It looks like a short-range one, though.\"* Jake passed along a mental image to the party.",
+            "format": "italic",
+            "justify": "default"
+        },
+        {
+            "line": "\"Peculiar,\" the Sword Saint answered, sending back the mental image of an identical magic circle down at the south pole. This one wasn’t broken, though. \"Is yours operational?\"",
+            "new_line": "*\"Peculiar,\"* the Sword Saint answered, sending back the mental image of an identical magic circle down at the south pole. This one wasn’t broken, though. **\"Is yours operational?\"**",
+            "format": "italic",
+            "justify": "default"
+        },
+        {
+            "line": "\"Nope, is yours?\"",
+            "new_line": "*\"Nope, is yours?\"*",
+            "format": "italic",
+            "justify": "default"
+        }
+    ],
+    "regex": [
+        {
+            "pattern": "^(.*amazon).*)$",
+            "sub": ""
+        },
+        {
+            "pattern": "^(\\[(.+?)(?:\\s*[-–]\\s*(?:lvl\\s*)?\\d+)?\\].*)$",
+            "sub": "**\\$1**"
+        }
+    ]
+}

@@ -1,0 +1,525 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="eng">
+  <head>
+    <meta content="8ae162fc-31cb-417b-b1f1-411ce32be7c2" name="dtb:uid"/>
+    <meta content="2" name="dtb:depth"/>
+    <meta content="calibre (4.20.0)" name="dtb:generator"/>
+    <meta content="0" name="dtb:totalPageCount"/>
+    <meta content="0" name="dtb:maxPageNumber"/>
+  </head>
+  <docTitle>
+    <text>The Primal Hunter 6: A LitRPG Adventure</text>
+  </docTitle>
+  <navMap>
+    <navPoint class="chapter" id="num_1" playOrder="0">
+      <navLabel>
+        <text>The Primal Hunter 6</text>
+      </navLabel>
+      <content src="text/part0000.html#0-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_2" playOrder="1">
+      <navLabel>
+        <text>Copyright</text>
+      </navLabel>
+      <content src="text/part0001.html#UGI0-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_3" playOrder="2">
+      <navLabel>
+        <text>Also by Zogarth</text>
+      </navLabel>
+      <content src="text/part0002.html#1T140-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_4" playOrder="3">
+      <navLabel>
+        <text>Contents</text>
+      </navLabel>
+      <content src="text/part0003.html#2RHM0-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_5" playOrder="4">
+      <navLabel>
+        <text>Previously on The Primal Hunter</text>
+      </navLabel>
+      <content src="text/part0004.html#3Q280-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_6" playOrder="5">
+      <navLabel>
+        <text>1. Road Trip Entertainment: Vampire Lore</text>
+      </navLabel>
+      <content src="text/part0005_split_000.html#4OIQ0-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_7" playOrder="6">
+      <navLabel>
+        <text>2. Unexpected Visitor</text>
+      </navLabel>
+      <content src="text/part0006_split_000.html#5N3C0-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_8" playOrder="7">
+      <navLabel>
+        <text>3. Visiting Skyggen &amp; Skyggen</text>
+      </navLabel>
+      <content src="text/part0007_split_000.html#6LJU0-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_9" playOrder="8">
+      <navLabel>
+        <text>4. Family Reunion</text>
+      </navLabel>
+      <content src="text/part0008_split_000.html#7K4G0-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_10" playOrder="9">
+      <navLabel>
+        <text>5. Exploring Relationships</text>
+      </navLabel>
+      <content src="text/part0009_split_000.html#8IL20-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_11" playOrder="10">
+      <navLabel>
+        <text>6. Umbral Lotus</text>
+      </navLabel>
+      <content src="text/part0010_split_000.html#9H5K0-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_12" playOrder="11">
+      <navLabel>
+        <text>7. Sorting Time</text>
+      </navLabel>
+      <content src="text/part0011_split_000.html#AFM60-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_13" playOrder="12">
+      <navLabel>
+        <text>8. To Sell or Not to Sell, That is the Question</text>
+      </navLabel>
+      <content src="text/part0012_split_000.html#BE6O0-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_14" playOrder="13">
+      <navLabel>
+        <text>9. The Auction (Read: Alchemy) Begins!</text>
+      </navLabel>
+      <content src="text/part0013_split_000.html#CCNA0-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_15" playOrder="14">
+      <navLabel>
+        <text>10. A Brief Intermission</text>
+      </navLabel>
+      <content src="text/part0014_split_000.html#DB7S0-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_16" playOrder="15">
+      <navLabel>
+        <text>11. An Epic Mixed Bag</text>
+      </navLabel>
+      <content src="text/part0015_split_000.html#E9OE0-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_17" playOrder="16">
+      <navLabel>
+        <text>12. A Cursed Intermission</text>
+      </navLabel>
+      <content src="text/part0016_split_000.html#F8900-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_18" playOrder="17">
+      <navLabel>
+        <text>13. Actually Buying Things</text>
+      </navLabel>
+      <content src="text/part0017_split_000.html#G6PI0-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_19" playOrder="18">
+      <navLabel>
+        <text>14. Bees, Pants &amp; the Geopolitical Landscape</text>
+      </navLabel>
+      <content src="text/part0018_split_000.html#H5A40-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_20" playOrder="19">
+      <navLabel>
+        <text>15. The Legendaries Cometh</text>
+      </navLabel>
+      <content src="text/part0019_split_000.html#I3QM0-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_21" playOrder="20">
+      <navLabel>
+        <text>16. Scammed</text>
+      </navLabel>
+      <content src="text/part0020_split_000.html#J2B80-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_22" playOrder="21">
+      <navLabel>
+        <text>17. A Unique Encounter</text>
+      </navLabel>
+      <content src="text/part0021_split_000.html#K0RQ0-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_23" playOrder="22">
+      <navLabel>
+        <text>18. You get an item! And you get an item! Everyone gets an item!</text>
+      </navLabel>
+      <content src="text/part0022_split_000.html#KVCC0-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_24" playOrder="23">
+      <navLabel>
+        <text>19. The Good Stuff</text>
+      </navLabel>
+      <content src="text/part0023_split_000.html#LTSU0-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_25" playOrder="24">
+      <navLabel>
+        <text>20. Soul Renewal</text>
+      </navLabel>
+      <content src="text/part0024_split_000.html#MSDG0-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_26" playOrder="25">
+      <navLabel>
+        <text>21. Time Wizard &amp; Future Plans</text>
+      </navLabel>
+      <content src="text/part0025_split_000.html#NQU20-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_27" playOrder="26">
+      <navLabel>
+        <text>22. Jake's Laboratorium &amp; To-do List</text>
+      </navLabel>
+      <content src="text/part0026_split_000.html#OPEK0-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_28" playOrder="27">
+      <navLabel>
+        <text>23. Oh, Gosh, It's a Time Skip!</text>
+      </navLabel>
+      <content src="text/part0027_split_000.html#PNV60-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_29" playOrder="28">
+      <navLabel>
+        <text>24. A King Reborn</text>
+      </navLabel>
+      <content src="text/part0028_split_000.html#QMFO0-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_30" playOrder="29">
+      <navLabel>
+        <text>25. Jake vs the King (Rematch?)</text>
+      </navLabel>
+      <content src="text/part0029_split_000.html#RL0A0-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_31" playOrder="30">
+      <navLabel>
+        <text>26. Unique Lifeforms</text>
+      </navLabel>
+      <content src="text/part0030_split_000.html#SJGS0-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_32" playOrder="31">
+      <navLabel>
+        <text>27. A Truly Cursed Ritual</text>
+      </navLabel>
+      <content src="text/part0031_split_000.html#TI1E0-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_33" playOrder="32">
+      <navLabel>
+        <text>28. Hunger</text>
+      </navLabel>
+      <content src="text/part0032_split_000.html#UGI00-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_34" playOrder="33">
+      <navLabel>
+        <text>29. Eternal Hunger</text>
+      </navLabel>
+      <content src="text/part0033_split_000.html#VF2I0-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_35" playOrder="34">
+      <navLabel>
+        <text>30. Progress Through Cursed Slaughter</text>
+      </navLabel>
+      <content src="text/part0034_split_000.html#10DJ40-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_36" playOrder="35">
+      <navLabel>
+        <text>31. Skills &amp; Paths</text>
+      </navLabel>
+      <content src="text/part0035_split_000.html#11C3M0-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_37" playOrder="36">
+      <navLabel>
+        <text>32. Fumigation</text>
+      </navLabel>
+      <content src="text/part0036_split_000.html#12AK80-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_38" playOrder="37">
+      <navLabel>
+        <text>33. A Path From Inferiority</text>
+      </navLabel>
+      <content src="text/part0037_split_000.html#1394Q0-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_39" playOrder="38">
+      <navLabel>
+        <text>34. First Contact: C-Grade</text>
+      </navLabel>
+      <content src="text/part0038_split_000.html#147LC0-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_40" playOrder="39">
+      <navLabel>
+        <text>35. Underground</text>
+      </navLabel>
+      <content src="text/part0039_split_000.html#1565U0-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_41" playOrder="40">
+      <navLabel>
+        <text>36. Onwards! To Haven!</text>
+      </navLabel>
+      <content src="text/part0040_split_000.html#164MG0-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_42" playOrder="41">
+      <navLabel>
+        <text>37. A Good Eye For People</text>
+      </navLabel>
+      <content src="text/part0041_split_000.html#173720-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_43" playOrder="42">
+      <navLabel>
+        <text>38. A Monumental Monument</text>
+      </navLabel>
+      <content src="text/part0042_split_000.html#181NK0-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_44" playOrder="43">
+      <navLabel>
+        <text>39. Clearing Up Misconceptions Left &amp; Right</text>
+      </navLabel>
+      <content src="text/part0043_split_000.html#190860-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_45" playOrder="44">
+      <navLabel>
+        <text>Intermission - Holyland: All By the Grace of the Holy Mother</text>
+      </navLabel>
+      <content src="text/part0044.html#19UOO0-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_46" playOrder="45">
+      <navLabel>
+        <text>40. Off He Goes</text>
+      </navLabel>
+      <content src="text/part0045_split_000.html#1AT9A0-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_47" playOrder="46">
+      <navLabel>
+        <text>41. Designing the School Uniform</text>
+      </navLabel>
+      <content src="text/part0046_split_000.html#1BRPS0-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_48" playOrder="47">
+      <navLabel>
+        <text>42. To Feel the Shroud</text>
+      </navLabel>
+      <content src="text/part0047_split_000.html#1CQAE0-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_49" playOrder="48">
+      <navLabel>
+        <text>43. The Weight of Time</text>
+      </navLabel>
+      <content src="text/part0048_split_000.html#1DOR00-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_50" playOrder="49">
+      <navLabel>
+        <text>44. Finding the Purpose</text>
+      </navLabel>
+      <content src="text/part0049_split_000.html#1ENBI0-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_51" playOrder="50">
+      <navLabel>
+        <text>45. A Shroud of Stars &amp; School Life Dangers</text>
+      </navLabel>
+      <content src="text/part0050_split_000.html#1FLS40-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_52" playOrder="51">
+      <navLabel>
+        <text>46. School Preparations</text>
+      </navLabel>
+      <content src="text/part0051_split_000.html#1GKCM0-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_53" playOrder="52">
+      <navLabel>
+        <text>47. A New Era</text>
+      </navLabel>
+      <content src="text/part0052_split_000.html#1HIT80-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_54" playOrder="53">
+      <navLabel>
+        <text>48. A Diverse Crowd</text>
+      </navLabel>
+      <content src="text/part0053_split_000.html#1IHDQ0-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_55" playOrder="54">
+      <navLabel>
+        <text>49. Dungeon: Order of the Malefic Viper D-grade entrance-test</text>
+      </navLabel>
+      <content src="text/part0054_split_000.html#1JFUC0-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_56" playOrder="55">
+      <navLabel>
+        <text>50. You Win Some, You Lose Some</text>
+      </navLabel>
+      <content src="text/part0055_split_000.html#1KEEU0-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_57" playOrder="56">
+      <navLabel>
+        <text>51. Elective Tests</text>
+      </navLabel>
+      <content src="text/part0056_split_000.html#1LCVG0-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_58" playOrder="57">
+      <navLabel>
+        <text>52. Readiness Not Found</text>
+      </navLabel>
+      <content src="text/part0057_split_000.html#1MBG20-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_59" playOrder="58">
+      <navLabel>
+        <text>53. Angry Transmutation</text>
+      </navLabel>
+      <content src="text/part0058_split_000.html#1NA0K0-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_60" playOrder="59">
+      <navLabel>
+        <text>54. Pretty Easy</text>
+      </navLabel>
+      <content src="text/part0059_split_000.html#1O8H60-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_61" playOrder="60">
+      <navLabel>
+        <text>55. Dominating the Test</text>
+      </navLabel>
+      <content src="text/part0060_split_000.html#1P71O0-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_62" playOrder="61">
+      <navLabel>
+        <text>56. Meeting Expectations</text>
+      </navLabel>
+      <content src="text/part0061_split_000.html#1Q5IA0-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_63" playOrder="62">
+      <navLabel>
+        <text>57. Extra Credits Hydra</text>
+      </navLabel>
+      <content src="text/part0062_split_000.html#1R42S0-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_64" playOrder="63">
+      <navLabel>
+        <text>58. Beast vs Man</text>
+      </navLabel>
+      <content src="text/part0063_split_000.html#1S2JE0-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_65" playOrder="64">
+      <navLabel>
+        <text>59. A Legendary Warrior</text>
+      </navLabel>
+      <content src="text/part0064_split_000.html#1T1400-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_66" playOrder="65">
+      <navLabel>
+        <text>60. Fangs of Man</text>
+      </navLabel>
+      <content src="text/part0065_split_000.html#1TVKI0-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_67" playOrder="66">
+      <navLabel>
+        <text>61. The Human Has Fangs</text>
+      </navLabel>
+      <content src="text/part0066_split_000.html#1UU540-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_68" playOrder="67">
+      <navLabel>
+        <text>62. Academy Entry Token</text>
+      </navLabel>
+      <content src="text/part0067_split_000.html#1VSLM0-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_69" playOrder="68">
+      <navLabel>
+        <text>63. A Different Time</text>
+      </navLabel>
+      <content src="text/part0068_split_000.html#20R680-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_70" playOrder="69">
+      <navLabel>
+        <text>64. An Uncertain Future</text>
+      </navLabel>
+      <content src="text/part0069_split_000.html#21PMQ0-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_71" playOrder="70">
+      <navLabel>
+        <text>65. Rules &amp; A Very Good Question</text>
+      </navLabel>
+      <content src="text/part0070_split_000.html#22O7C0-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_72" playOrder="71">
+      <navLabel>
+        <text>66. "The Positive Side"</text>
+      </navLabel>
+      <content src="text/part0071_split_000.html#23MNU0-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_73" playOrder="72">
+      <navLabel>
+        <text>67. Conversations Are Hard</text>
+      </navLabel>
+      <content src="text/part0072_split_000.html#24L8G0-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_74" playOrder="73">
+      <navLabel>
+        <text>68. Blaze It!</text>
+      </navLabel>
+      <content src="text/part0073_split_000.html#25JP20-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_75" playOrder="74">
+      <navLabel>
+        <text>69. A Life of Punishment</text>
+      </navLabel>
+      <content src="text/part0074_split_000.html#26I9K0-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_76" playOrder="75">
+      <navLabel>
+        <text>70. First Lesson</text>
+      </navLabel>
+      <content src="text/part0075_split_000.html#27GQ60-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_77" playOrder="76">
+      <navLabel>
+        <text>71. Willpower, Flames &amp; Dragons</text>
+      </navLabel>
+      <content src="text/part0076_split_000.html#28FAO0-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_78" playOrder="77">
+      <navLabel>
+        <text>72. Mysterious Senior</text>
+      </navLabel>
+      <content src="text/part0077_split_000.html#29DRA0-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_79" playOrder="78">
+      <navLabel>
+        <text>73. Soulflame &amp; Exposed</text>
+      </navLabel>
+      <content src="text/part0078_split_000.html#2ACBS0-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_80" playOrder="79">
+      <navLabel>
+        <text>74. A New Path</text>
+      </navLabel>
+      <content src="text/part0079_split_000.html#2BASE0-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_81" playOrder="80">
+      <navLabel>
+        <text>75. Windy Times Ahead</text>
+      </navLabel>
+      <content src="text/part0080_split_000.html#2C9D00-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_82" playOrder="81">
+      <navLabel>
+        <text>76. Bit of Dragon Lore</text>
+      </navLabel>
+      <content src="text/part0081_split_000.html#2D7TI0-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_83" playOrder="82">
+      <navLabel>
+        <text>77. The History of Bloodlines</text>
+      </navLabel>
+      <content src="text/part0082_split_000.html#2E6E40-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_84" playOrder="83">
+      <navLabel>
+        <text>78. Relationships Are Hard. Oh, and Neurotoxins</text>
+      </navLabel>
+      <content src="text/part0083_split_000.html#2F4UM0-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+    <navPoint class="chapter" id="num_85" playOrder="84">
+      <navLabel>
+        <text>Thank you for reading The Primal Hunter 6</text>
+      </navLabel>
+      <content src="text/part0084.html#2G3F80-624e0a5ba39b452bb21621b4eb21c239"/>
+    </navPoint>
+  </navMap>
+</ncx>
