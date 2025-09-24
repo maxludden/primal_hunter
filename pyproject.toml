@@ -1,7 +1,7 @@
 [project]
 name = "primal-hunter"
 version = "0.1.0"
-description = "Add your description here"
+description = "Create a epub ebook from a list of URLs."
 readme = "README.md"
 authors = [{ name = "Maxwell Ludden", email = "max@ludden.dev" }]
 requires-python = ">=3.13"
