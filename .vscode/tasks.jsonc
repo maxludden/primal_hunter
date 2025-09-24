@@ -1,0 +1,34 @@
+{
+    // VS Code tasks to start debugpy for the project's main.py
+    // Save as .vscode/tasks.jsonc
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Debug primal_hunter main.py",
+            "type": "shell",
+            // Use the selected Python interpreter from the Python extension
+            "command": "${command:python.interpreterPath}",
+            "args": [
+                "-m",
+                "debugpy",
+                "--listen",
+                "5678",
+                "--wait-for-client",
+                "${workspaceFolder}/src/primal_hunter/v2/main.py"
+            ],
+            "options": {
+                "env": {
+                    // Ensure the workspace is on PYTHONPATH so imports work
+                    "PYTHONPATH": "${workspaceFolder}"
+                }
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "problemMatcher": []
+        }
+    ]
+}

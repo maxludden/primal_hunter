@@ -49,6 +49,7 @@ class Version(Document):
         alias="contentHtml",
         description="HTML chapter body preserving formatting and justification",
     )
+    content_markdown: str = Field(..., description="Markdown chapter body (not yet implemented)")
     published: Optional[datetime] = Field(
         default=None,
         description="Publication timestamp provided by RoyalRoad (UTC)",
@@ -136,6 +137,7 @@ class Version(Document):
         *,
         content: str,
         content_html: Optional[str] = None,
+        content_markdown: Optional[str] = None,
     ) -> "Version":
         """Construct a ``Version`` from a TOC payload and scraped ``content``.
 

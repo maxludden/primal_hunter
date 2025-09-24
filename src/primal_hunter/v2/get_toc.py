@@ -1,16 +1,7 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
-"""
-Fetch and parse The Primal Hunter TOC from RoyalRoad.
-- Cache HTML to static/html/toc.html
-- Refresh cache if older than 6 hours
-- Extract chapter info (number, title, url, published)
-- Save chapters > 985 to static/json/toc.json keyed by chapter number
-"""
-
 import json
-import os
 import re
 from collections import OrderedDict
 from datetime import datetime, timedelta
@@ -24,10 +15,21 @@ from rich.console import Console
 
 from primal_hunter.logger import get_console, get_logger, get_progress
 
+"""
+Fetch and parse The Primal Hunter TOC from RoyalRoad.
+- Cache HTML to static/html/toc.html
+- Refresh cache if older than 6 hours
+- Extract chapter info (number, title, url, published)
+- Save chapters >= ``MIN_CHAPTER`` to static/json/toc.json keyed by chapter number
+- Persist published timestamps as both ISO strings and JSON-friendly datetime objects
+"""
+
+
 BASE_URL: str = "https://www.royalroad.com"
 TOC_URL: str = f"{BASE_URL}/fiction/36049/the-primal-hunter"
 CACHE_HTML: Path = Path("static/html/toc.html")
 OUTPUT_JSON: Path = Path("static/json/toc.json")
+MIN_CHAPTER: int = 986
 
 HEADERS: Dict[str, str] = {"User-Agent": "Mozilla/5.0"}
 CACHE_TTL: timedelta = timedelta(hours=6)
@@ -46,7 +48,7 @@ class ChapterRecord(TypedDict):
     chapter: int
     title: str
     url: str
-    published: Optional[str]
+    published: Optional[datetime]
 
 
 def fetch_toc() -> str:
@@ -84,7 +86,7 @@ def parse_chapters(html: str) -> List[ChapterRecord]:
 
     Returns:
         list[dict[str, Any]]: Ordered list of chapter dictionaries containing
-            chapter number, title, URL, and published timestamp (ISO-8601).
+            chapter number, title, URL, and published timestamp (UTC ``datetime``).
     """
     soup = BeautifulSoup(html, "html.parser")
     rows = list(_iter_chapter_rows(soup))
@@ -110,13 +112,13 @@ def parse_chapters(html: str) -> List[ChapterRecord]:
             log.debug(f"Row {row_index}:1 text: `{text}`")
             match = re.match(r"Chapter\s+(?P<chapter>\d+) - (?P<title>.+)", text)
             if not match:
+                if row_index in [9,10]:  # Known bad rows
+                    continue
                 log.warning(f"Could not parse row {row_index}: {text}")
                 progress_bar.advance(task)
                 continue
-            chapter_num = int(match.group("chapter"))
-            title = match.group("title").strip()
-            progress_bar.console.log(f"Parsed chapter {chapter_num}: {title}")
-
+            chapter_num = int(match["chapter"])
+            title = match["title"].strip()
             progress_bar.update(
                 task, description=f"Row {row_index}: Parsing URL..."
             )
@@ -166,7 +168,7 @@ def parse_chapters(html: str) -> List[ChapterRecord]:
                     chapter=chapter_num,
                     title=title,
                     url=url,
-                    published=published.isoformat() if published else None,
+                    published=published,
                 )
             )
             log.trace(f"Parsed chapter {chapter_num}: {title}")
@@ -175,22 +177,44 @@ def parse_chapters(html: str) -> List[ChapterRecord]:
     return chapters
 
 
-def _serialise_chapters(chapters: Iterable[ChapterRecord]) -> OrderedDict[str, Dict[str, Any]]:
+def _serialize_chapters(chapters: Iterable[ChapterRecord]) -> OrderedDict[str, Dict[str, Any]]:
     """Convert chapter records to a JSON-friendly mapping keyed by chapter number."""
 
-    serialised: list[tuple[int, Dict[str, Any]]] = []
+    serialized: list[tuple[int, Dict[str, Any]]] = []
     for record in chapters:
         chapter_num = record["chapter"]
-        payload = {
+        payload: Dict[str, Any] = {
             key: value
             for key, value in record.items()
-            if key != "chapter"
+            if key not in {"chapter", "published"} and value is not None
         }
-        serialised.append((chapter_num, payload))
+        payload["chapter"] = chapter_num
+
+        published_dt = record.get("published")
+        if isinstance(published_dt, datetime):
+            iso_value = published_dt.isoformat()
+            payload["published_iso"] = iso_value
+            payload["published"] = {
+                "iso": iso_value,
+                "timestamp": published_dt.timestamp(),
+                "utc": {
+                    "year": published_dt.year,
+                    "month": published_dt.month,
+                    "day": published_dt.day,
+                    "hour": published_dt.hour,
+                    "minute": published_dt.minute,
+                    "second": published_dt.second,
+                    "microsecond": published_dt.microsecond,
+                },
+            }
+
+        serialized.append((chapter_num, payload))
 
     ordered = OrderedDict(
-        (str(number), payload) for number, payload in sorted(serialised, key=lambda item: item[0])
+        (str(number), payload)
+        for number, payload in sorted(serialized, key=lambda item: item[0])
     )
+    log.debug(f"Serialized {len(ordered)} chapters")
     return ordered
 
 
@@ -200,12 +224,14 @@ def main() -> None:
     html = fetch_toc()
     chapters = parse_chapters(html)
     log.trace(f"Parsed {len(chapters)} chapters total")
-    filtered = [c for c in chapters if c["chapter"] > 985]
-    log.trace(f"Filtered {len(filtered)} chapters > 985")
+    filtered = [c for c in chapters if c["chapter"] >= MIN_CHAPTER]
+    log.trace(
+        f"Filtered {len(filtered)} chapters >= {MIN_CHAPTER}"
+    )
 
-    serialised = _serialise_chapters(filtered)
-    OUTPUT_JSON.write_text(json.dumps(serialised, indent=2), encoding="utf-8")
-    log.success(f"Saved {len(serialised)} chapters to {OUTPUT_JSON}")
+    serialized = _serialize_chapters(filtered)
+    OUTPUT_JSON.write_text(json.dumps(serialized, indent=2), encoding="utf-8")
+    log.success(f"Saved {len(serialized)} chapters to {OUTPUT_JSON}")
 
 
 if __name__ == "__main__":
