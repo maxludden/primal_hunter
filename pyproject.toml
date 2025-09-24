@@ -24,6 +24,10 @@ dependencies = [
     "pypandoc>=1.15",
     "sh>=2.2.2",
     "scrapy>=2.13.3",
+    "promptflow>=1.18.1",
+    "promptflow-tools>=1.6.1",
+    "cssutils>=2.11.1",
+    "bpython>=0.25",
 ]
 
 [project.scripts]
@@ -43,3 +47,6 @@ follow_imports = "silent"
 [tool.ruff]
 line-length = 88
 ignore = ["F401"]
+
+[tool.pylint."MESSAGES CONTROL"]
+disable = ["W0718"]

@@ -52,8 +52,8 @@ class ChapterPayloadRequired(TypedDict):
 
 
 class ChapterPayload(ChapterPayloadRequired, total=False):
-    """Shape of a chapter entry produced by ``get_toc.py``."""
-
+    """Shape of a chapter entry produced by `get_toc.py`."""
+    content_markdown: str
     published: Optional[datetime]
 
 
@@ -154,15 +154,16 @@ def _normalize_toc_entry(
     candidate = payload.get("chapter", chapter_from_key)
     try:
         chapter = int(candidate)
-    except Exception:
-        log.warning(
-            f"Skipping TOC entry with invalid chapter value: {candidate!r} (key {chapter_key})"
-        )
+    except (TypeError, ValueError) as exc:
+        msg = f"Skipping TOC entry with invalid chapter value: {candidate!r} (key {chapter_key})"
+        log.warning(msg)
+        log.debug(f"Exception details: {exc}")
         return None
 
     if chapter != chapter_from_key:
         log.debug(
-            f"Chapter mismatch between key {chapter_key} and payload {candidate}; using payload value"
+            f"Chapter mismatch between key {chapter_key} and \
+payload {candidate}; using payload value"
         )
 
     title = payload.get("title")
@@ -315,6 +316,8 @@ def _display_chapter_preview(
     else:
         published_text = None
 
+    title = f"Chapter {chapter} = {title}" if title else f"Chapter {chapter}"
+
     panel_subtitle = (
         f"{subtitle_url} | Published: {published_text}"
         if published_text
@@ -423,6 +426,8 @@ async def process_chapter(chapter_data: ChapterPayload) -> None:
                 check=True,
             )
             markdown = proc.stdout
+            log.debug(f"Pandoc CLI conversion succeeded for chapter {chapter_num}")
+            console.print()
         except FileNotFoundError:
             log.warning("Pandoc executable not found; skipping markdown conversion")
         except subprocess.CalledProcessError as exc:
@@ -432,7 +437,7 @@ async def process_chapter(chapter_data: ChapterPayload) -> None:
     if markdown:
         # Keep the computed markdown available for downstream use / inspection.
         # We attach it to the chapter payload (non-invasive) and log the result.
-        chapter_data["_pandoc_markdown"] = markdown
+        chapter_data["content_markdown"] = markdown
         log.debug(f"Converted chapter {chapter_num} HTML to pandoc markdown ({len(markdown)} chars)")
 
 
@@ -451,6 +456,7 @@ async def process_chapter(chapter_data: ChapterPayload) -> None:
         existing.url = document.url
         existing.content = document.content
         existing.content_html = document.content_html
+        existing.content_markdown = document.content_markdown
         existing.published = document.published
         await existing.save()
         log.success(f"Updated chapter {chapter_num}: {existing.title}")

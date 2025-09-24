@@ -20,7 +20,7 @@ from pydantic import AnyHttpUrl, Field, ConfigDict, field_validator
 
 
 def _utc_now() -> datetime:
-    """Return the current UTC timestamp as a ``datetime`` instance."""
+    """Return the current UTC timestamp as a `datetime` instance."""
     return datetime.now(timezone.utc)
 
 
@@ -49,15 +49,25 @@ class Version(Document):
         alias="contentHtml",
         description="HTML chapter body preserving formatting and justification",
     )
-    content_markdown: str = Field(..., description="Markdown chapter body (not yet implemented)")
+    content_markdown: str = Field(
+        "",
+        description="Markdown chapter body (not yet implemented)",
+    )
     published: Optional[datetime] = Field(
         default=None,
         description="Publication timestamp provided by RoyalRoad (UTC)",
     )
     created_at: datetime = Field(default_factory=_utc_now, description="Insertion timestamp (UTC)")
-    updated_at: datetime = Field(default_factory=_utc_now, description="Last modification timestamp (UTC)")
+    updated_at: datetime = Field(
+        default_factory=_utc_now,
+        description="Last modification timestamp (UTC)"
+    )
 
     class Settings:
+        """Configuration for the Version document collection.
+
+        Specifies the MongoDB collection name and indexes for the Version model.
+        """
         name = "versions"
         indexes = ["chapter", "url"]
 
@@ -67,10 +77,8 @@ class Version(Document):
     @field_validator("title")
     @classmethod
     def _normalize_title(cls, value: str) -> str:
-        title = value.strip()
-        if not title:
-            msg = "title may not be blank"
-            raise ValueError(msg)
+        if not (title := value.strip()):
+            raise ValueError("title may not be blank")
         return title
 
     @field_validator("content")
@@ -86,7 +94,7 @@ class Version(Document):
     @field_validator("published", mode="before")
     @classmethod
     def _parse_published(cls, value: Any) -> Optional[datetime]:
-        """Accept ISO strings, Pendulum objects, or datetimes for ``published``."""
+        """Accept ISO strings, Pendulum objects, or datetimes for `published`."""
         if value in (None, ""):
             return None
         if isinstance(value, datetime):
@@ -107,8 +115,8 @@ class Version(Document):
             # Fallback: try to interpret the stringified parsed value with stdlib
             try:
                 dt = datetime.fromisoformat(str(parsed))
-            except Exception:  # pragma: no cover - defensive
-                raise ValueError(f"Unable to interpret parsed published timestamp: {parsed!r}")
+            except Exception as exc:  # pragma: no cover - defensive
+                raise ValueError(f"Unable to interpret parsed published timestamp: {parsed!r}") from exc
             if dt.tzinfo is None:
                 return dt.replace(tzinfo=timezone.utc)
             return dt.astimezone(timezone.utc)
@@ -116,7 +124,7 @@ class Version(Document):
         raise TypeError(msg)
 
     async def save(self, *args: Any, **kwargs: Any) -> Version:
-        """Persist the document while refreshing ``updated_at``."""
+        """Persist the document while refreshing `updated_at`."""
 
         self.updated_at = _utc_now()
         return await super().save(*args, **kwargs)
@@ -139,9 +147,9 @@ class Version(Document):
         content_html: Optional[str] = None,
         content_markdown: Optional[str] = None,
     ) -> "Version":
-        """Construct a ``Version`` from a TOC payload and scraped ``content``.
+        """Construct a `Version` from a TOC payload and scraped `content`.
 
-        The helper mirrors the shape produced by ``get_toc.py`` and keeps
+        The helper mirrors the shape produced by `get_toc.py` and keeps
         callers free from having to remember the extra bookkeeping fields.
 
         This implementation validates that required keys are present and normalizes
@@ -171,6 +179,7 @@ class Version(Document):
             "url": str(url),
             "content": content,
             "content_html": content_html or "",
+            "content_markdown": content_markdown or "",
             "published": payload.get("published"),
         }
         return cls(**data)
